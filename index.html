@@ -42,6 +42,57 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
 
+  <!-- Badge Wallet Custom CSS -->
+  <style>
+    .badge-image-container {
+      position: relative;
+      overflow: hidden;
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+      border-radius: 0.375rem;
+    }
+
+    .badge-image-container:hover {
+      transform: scale(1.05);
+    }
+
+    .badge-image-container img {
+      transition: transform 0.3s ease;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1;
+      object-fit: cover;
+    }
+
+    .badge-image-container:hover img {
+      transform: scale(1.1);
+    }
+
+    .badge-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      border-radius: 0.375rem;
+    }
+
+    .badge-image-container:hover .badge-overlay {
+      opacity: 1;
+    }
+
+    .badge-overlay i {
+      color: white;
+      font-size: 2rem;
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -80,6 +131,9 @@
             <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
           </li>
           <li>
+            <a href="#badges" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Badges</span></a>
+          </li>
+          <li>
             <a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
           </li>
           <li>
@@ -95,10 +149,11 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1>Welcome!</h1>
+      <h1>Hello, World!</h1>
       <p>
         I'm
-        <span class="typed" data-typed-items="a Backend Engineer, a Software Engineer, a FinTech Developer, a System Architect"></span>
+        <span class="typed"
+          data-typed-items="a Backend Engineer, a Software Engineer, a FinTech Developer, a System Architect"></span>
       </p>
     </div>
   </section>
@@ -112,21 +167,23 @@
           <h2>About Me</h2>
           <p>
             I'm a passionate Backend Engineer with 3+ years of experience building scalable, secure, and maintainable
-            systems—primarily in the financial technology sector. Currently working at MAMPU.IO, where I lead the 
-            development of core banking platforms that serve over 12,000 users across rural banks (BPR) and cooperatives 
+            systems—primarily in the financial technology sector. Currently working at MAMPU.IO, where I lead the
+            development of core banking platforms that serve over 12,000 users across rural banks (BPR) and cooperatives
             in Indonesia.
 
-            My expertise lies in designing microservices architectures, implementing event-driven systems, and integrating
-            critical financial services including core banking systems, payment gateways, digital identity verification, 
-            and loan processing platforms. I have successfully delivered Mobile Banking and Loan Management solutions 
+            My expertise lies in designing microservices architectures, implementing event-driven systems, and
+            integrating
+            critical financial services including core banking systems, payment gateways, digital identity verification,
+            and loan processing platforms. I have successfully delivered Mobile Banking and Loan Management solutions
             that handle thousands of monthly transactions with high reliability and performance.
 
-            I'm passionate about clean code, test-driven development, and building robust backend solutions that can 
-            scale with business growth. My experience spans across Java, Go, PHP, and Python, with deep knowledge of 
+            I'm passionate about clean code, test-driven development, and building robust backend solutions that can
+            scale with business growth. My experience spans across Java, Go, PHP, and Python, with deep knowledge of
             Spring Boot, Laravel, and various database technologies including MySQL, PostgreSQL, and Redis.
 
-            I hold a Bachelor's degree in Computing from President University with a GPA of 3.85/4.00, and I'm committed 
-            to continuous learning and staying updated with the latest technologies in backend development and fintech innovations.
+            I hold a Bachelor's degree in Computing from President University with a GPA of 3.85/4.00, and I'm committed
+            to continuous learning and staying updated with the latest technologies in backend development and fintech
+            innovations.
           </p>
           <div class="mt-3">
             <h5>Social Links</h5>
@@ -155,6 +212,640 @@
       </div>
     </section>
     <!-- End About Section -->
+
+    <!-- ======= Badge Wallet Section ======= -->
+    <section id="badges" class="portfolio section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>Badge Wallet</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <!-- Badge cards with hover zoom effect -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Analyze Sentiment with Natural Language API Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/bd687b0c-3959-4e06-b511-6623e32b8fdb/image.png"
+              data-badge-url="https://www.credly.com/badges/17afd4a0-49e2-40ae-bb28-d853e820a1e7">
+              <img src="https://images.credly.com/size/680x680/images/bd687b0c-3959-4e06-b511-6623e32b8fdb/image.png"
+                class="img-fluid rounded shadow-sm" alt="Analyze Sentiment with Natural Language API Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Analyze Speech and Language with Google APIs Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/b82729b9-8f1f-4362-8b71-fb08f2cea6c2/image.png"
+              data-badge-url="https://www.credly.com/badges/9c301d6f-53e5-479b-ba69-113b2a5b1800">
+              <img src="https://images.credly.com/size/680x680/images/b82729b9-8f1f-4362-8b71-fb08f2cea6c2/image.png"
+                class="img-fluid rounded shadow-sm" alt="Analyze Speech and Language with Google APIs Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Build and Deploy Machine Learning Solutions on Vertex AI Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/f4c342c9-af98-4352-b54a-a8a166ee8f68/image.png"
+              data-badge-url="https://www.credly.com/badges/831e86b0-6746-4fba-a6d6-36b9140d1a53">
+              <img src="https://images.credly.com/size/680x680/images/f4c342c9-af98-4352-b54a-a8a166ee8f68/image.png"
+                class="img-fluid rounded shadow-sm" alt="Build and Deploy Machine Learning Solutions on Vertex AI Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Build a Secure Google Cloud Network Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/e1131ae3-4a52-4af1-9801-b7853767cf79/image.png"
+              data-badge-url="https://www.credly.com/badges/3d4bd36d-0829-4066-9953-e159ae2849fc">
+              <img src="https://images.credly.com/size/680x680/images/e1131ae3-4a52-4af1-9801-b7853767cf79/image.png"
+                class="img-fluid rounded shadow-sm" alt="Build a Secure Google Cloud Network Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Classify Images with TensorFlow on Google Cloud"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/ba7d317c-0441-493d-9297-840162892581/image.png"
+              data-badge-url="https://www.credly.com/badges/4c4e5ee9-e3b2-4457-8f32-0b20cc50d4e7">
+              <img src="https://images.credly.com/size/680x680/images/ba7d317c-0441-493d-9297-840162892581/image.png"
+                class="img-fluid rounded shadow-sm" alt="Classify Images with TensorFlow on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Create ML Models with BigQuery ML Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/073a27aa-c3d6-44b5-875f-906191666d70/image.png"
+              data-badge-url="https://www.credly.com/badges/ddafb026-01f5-4c40-bdc0-dfabfb129d21">
+              <img src="https://images.credly.com/size/680x680/images/073a27aa-c3d6-44b5-875f-906191666d70/image.png"
+                class="img-fluid rounded shadow-sm" alt="Create ML Models with BigQuery ML Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Derive Insights from BigQuery Data Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/11088b22-7be5-4fe3-995d-c014514c8dc3/image.png"
+              data-badge-url="https://www.credly.com/badges/d3f081f1-970e-4082-99c7-9f1d6f49ed5b">
+              <img src="https://images.credly.com/size/680x680/images/11088b22-7be5-4fe3-995d-c014514c8dc3/image.png"
+                class="img-fluid rounded shadow-sm" alt="Derive Insights from BigQuery Data Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Detect Manufacturing Defects using Visual Inspection AI Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/3bdfc329-851b-4153-a5c4-10d8c3a1f18c/image.png"
+              data-badge-url="https://www.credly.com/badges/f03f94ed-1488-4a0f-b1d6-8940b5d1b0e1">
+              <img src="https://images.credly.com/size/680x680/images/3bdfc329-851b-4153-a5c4-10d8c3a1f18c/image.png"
+                class="img-fluid rounded shadow-sm" alt="Detect Manufacturing Defects using Visual Inspection AI Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Get Started with Cloud Storage Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/8fae0693-0a1a-4c15-b3b6-10b4104d0e30/image.png"
+              data-badge-url="https://www.credly.com/badges/a4ba96a2-cd7e-4a6d-b45d-626863c5c301">
+              <img src="https://images.credly.com/size/680x680/images/8fae0693-0a1a-4c15-b3b6-10b4104d0e30/image.png"
+                class="img-fluid rounded shadow-sm" alt="Get Started with Cloud Storage Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Implement Cloud Security Fundamentals on Google Cloud Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/f1dbea96-0ef4-4857-bb85-3d208a82de10/image.png"
+              data-badge-url="https://www.credly.com/badges/b9f99139-ea20-4d0c-981f-93d8786cd73f">
+              <img src="https://images.credly.com/size/680x680/images/f1dbea96-0ef4-4857-bb85-3d208a82de10/image.png"
+                class="img-fluid rounded shadow-sm" alt="Implement Cloud Security Fundamentals on Google Cloud Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Implement Load Balancing on Compute Engine Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/eea11cba-2a98-4bbe-bad2-447878dd34a2/image.png"
+              data-badge-url="https://www.credly.com/badges/666099dd-5891-49f1-9ec8-4f96aafba844">
+              <img src="https://images.credly.com/size/680x680/images/eea11cba-2a98-4bbe-bad2-447878dd34a2/image.png"
+                class="img-fluid rounded shadow-sm" alt="Implement Load Balancing on Compute Engine Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Prepare Data for ML APIs on Google Cloud Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/68756311-9319-4eeb-a2b7-76defc8dd8a2/image.png"
+              data-badge-url="https://www.credly.com/badges/be8cf525-cbbb-4001-b230-f5bcf34be660">
+              <img src="https://images.credly.com/size/680x680/images/68756311-9319-4eeb-a2b7-76defc8dd8a2/image.png"
+                class="img-fluid rounded shadow-sm" alt="Prepare Data for ML APIs on Google Cloud Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Prompt Design in Vertex AI Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/cef82b2e-970a-4318-8e59-c3e26b7f5c19/image.png"
+              data-badge-url="https://www.credly.com/badges/1328aec7-2b6d-4200-99bb-4eb670d88b5e">
+              <img src="https://images.credly.com/size/680x680/images/cef82b2e-970a-4318-8e59-c3e26b7f5c19/image.png"
+                class="img-fluid rounded shadow-sm" alt="Prompt Design in Vertex AI Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Set Up a Google Cloud Network Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/189c5c31-67c6-4eae-87dc-3b8185a99043/image.png"
+              data-badge-url="https://www.credly.com/badges/97d5e36c-9ab1-43de-b3ac-b2fbfa4dda3a">
+              <img src="https://images.credly.com/size/680x680/images/189c5c31-67c6-4eae-87dc-3b8185a99043/image.png"
+                class="img-fluid rounded shadow-sm" alt="Set Up a Google Cloud Network Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Set Up an App Dev Environment on Google Cloud Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/42326d44-14ff-4eda-b9c5-7d8f12919253/image.png"
+              data-badge-url="https://www.credly.com/badges/c0f27b1e-1787-40aa-9167-be5c1d3a3809">
+              <img src="https://images.credly.com/size/680x680/images/42326d44-14ff-4eda-b9c5-7d8f12919253/image.png"
+                class="img-fluid rounded shadow-sm" alt="Set Up an App Dev Environment on Google Cloud Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="The Basics of Google Cloud Compute Skill Badge"
+              data-badge-issuer="Google Cloud" data-badge-date="June 20, 2024"
+              data-badge-image="https://images.credly.com/size/680x680/images/7623fefd-ebbd-4d8f-a053-f41dca852d9e/image.png"
+              data-badge-url="https://www.credly.com/badges/126c1b2c-f16a-4be2-a983-87e465a16cd9">
+              <img src="https://images.credly.com/size/680x680/images/7623fefd-ebbd-4d8f-a053-f41dca852d9e/image.png"
+                class="img-fluid rounded shadow-sm" alt="The Basics of Google Cloud Compute Skill Badge">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Added Google Skills badges -->
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Prepare Data for ML APIs on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-22"
+              data-badge-image="https://cdn.qwiklabs.com/OT8k8pRRu%2ForDqpfuMIwyglzX14PyLPFHd2FNRS0Ifc%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3729765">
+              <img src="https://cdn.qwiklabs.com/OT8k8pRRu%2ForDqpfuMIwyglzX14PyLPFHd2FNRS0Ifc%3D"
+                class="img-fluid rounded shadow-sm" alt="Prepare Data for ML APIs on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Google Kubernetes Engine Best Practices: Security"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-22"
+              data-badge-image="https://cdn.qwiklabs.com/BwDeFRYddUb8YqOn4VKFu3TTk%2BtAUYt%2BfZZc4kvVbhk%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3729448">
+              <img src="https://cdn.qwiklabs.com/BwDeFRYddUb8YqOn4VKFu3TTk%2BtAUYt%2BfZZc4kvVbhk%3D"
+                class="img-fluid rounded shadow-sm" alt="Google Kubernetes Engine Best Practices: Security">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Implement Cloud Security Fundamentals on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-22"
+              data-badge-image="https://cdn.qwiklabs.com/kVSYBCbxze72Wty4HLV9MqnmQDKtNPYBhCW6y4m1KTg%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3726695">
+              <img src="https://cdn.qwiklabs.com/kVSYBCbxze72Wty4HLV9MqnmQDKtNPYBhCW6y4m1KTg%3D"
+                class="img-fluid rounded shadow-sm" alt="Implement Cloud Security Fundamentals on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Google Cloud Solutions I: Scaling Your Infrastructure"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-22"
+              data-badge-image="https://cdn.qwiklabs.com/lCRYHNAn%2Fj%2FyRe9V0gzB5WFkRiADia9BP6JLaxH7WcY%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3726204">
+              <img src="https://cdn.qwiklabs.com/lCRYHNAn%2Fj%2FyRe9V0gzB5WFkRiADia9BP6JLaxH7WcY%3D"
+                class="img-fluid rounded shadow-sm" alt="Google Cloud Solutions I: Scaling Your Infrastructure">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Prepare Data for Looker Dashboards and Reports"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-21"
+              data-badge-image="https://cdn.qwiklabs.com/2L8E9WsZ8Z5zUcUdTsOUSVt%2FN%2FaPk2Yg4iqHwDOHNNw%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3718592">
+              <img src="https://cdn.qwiklabs.com/2L8E9WsZ8Z5zUcUdTsOUSVt%2FN%2FaPk2Yg4iqHwDOHNNw%3D"
+                class="img-fluid rounded shadow-sm" alt="Prepare Data for Looker Dashboards and Reports">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Engineer Data for Predictive Modeling with BigQuery ML"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-21"
+              data-badge-image="https://cdn.qwiklabs.com/%2BpOT%2BBZY9BS7kfk5iglnlKqCgOdME6g%2BVx3q0cok%2FgE%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3717825">
+              <img src="https://cdn.qwiklabs.com/%2BpOT%2BBZY9BS7kfk5iglnlKqCgOdME6g%2BVx3q0cok%2FgE%3D"
+                class="img-fluid rounded shadow-sm" alt="Engineer Data for Predictive Modeling with BigQuery ML">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Implement DevOps Workflows in Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-21"
+              data-badge-image="https://cdn.qwiklabs.com/avLswGesBdPVZgJPWOCscSTTxTYoTwYBMa8%2F9VqB0Yg%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3717032">
+              <img src="https://cdn.qwiklabs.com/avLswGesBdPVZgJPWOCscSTTxTYoTwYBMa8%2F9VqB0Yg%3D"
+                class="img-fluid rounded shadow-sm" alt="Implement DevOps Workflows in Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Deploy Kubernetes Applications on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-21"
+              data-badge-image="https://cdn.qwiklabs.com/o83iSTKvb4KXWBiv1F2ViPaKpW4g9SGAZOeaEnqGbGo%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3716656">
+              <img src="https://cdn.qwiklabs.com/o83iSTKvb4KXWBiv1F2ViPaKpW4g9SGAZOeaEnqGbGo%3D"
+                class="img-fluid rounded shadow-sm" alt="Deploy Kubernetes Applications on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Set Up a Google Cloud Network"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-20"
+              data-badge-image="https://cdn.qwiklabs.com/pQKn%2BMWMs9ONN1oe7aDVjbornzSbFifony2eHUbl%2BA8%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3715991">
+              <img src="https://cdn.qwiklabs.com/pQKn%2BMWMs9ONN1oe7aDVjbornzSbFifony2eHUbl%2BA8%3D"
+                class="img-fluid rounded shadow-sm" alt="Set Up a Google Cloud Network">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Create ML Models with BigQuery ML"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-20"
+              data-badge-image="https://cdn.qwiklabs.com/FviWG7zqkyrY7cCjCHeaf6nfyVpOjelrIOdu65triDw%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3715849">
+              <img src="https://cdn.qwiklabs.com/FviWG7zqkyrY7cCjCHeaf6nfyVpOjelrIOdu65triDw%3D"
+                class="img-fluid rounded shadow-sm" alt="Create ML Models with BigQuery ML">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Create and Manage AlloyDB Instances"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-20"
+              data-badge-image="https://cdn.qwiklabs.com/HkKxECtVYNxZBwV%2BfSsrCGs8CZbSghmgeR0TfuA5360%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3714269">
+              <img src="https://cdn.qwiklabs.com/HkKxECtVYNxZBwV%2BfSsrCGs8CZbSghmgeR0TfuA5360%3D"
+                class="img-fluid rounded shadow-sm" alt="Create and Manage AlloyDB Instances">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Cloud Architecture: Design, Implement, and Manage"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-20"
+              data-badge-image="https://cdn.qwiklabs.com/ZHYI%2BNEO%2BkAk32hxQVSSH9UCEzJACG6nTTgA0slbiQQ%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3713318">
+              <img src="https://cdn.qwiklabs.com/ZHYI%2BNEO%2BkAk32hxQVSSH9UCEzJACG6nTTgA0slbiQQ%3D"
+                class="img-fluid rounded shadow-sm" alt="Cloud Architecture: Design, Implement, and Manage">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Build a Secure Google Cloud Network"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-19"
+              data-badge-image="https://cdn.qwiklabs.com/6QsPX5Wdg0eHWFed3ZKTbX2c88yVFGgaWPlYt%2BJdp4Q%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3707637">
+              <img src="https://cdn.qwiklabs.com/6QsPX5Wdg0eHWFed3ZKTbX2c88yVFGgaWPlYt%2BJdp4Q%3D"
+                class="img-fluid rounded shadow-sm" alt="Build a Secure Google Cloud Network">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Build a Website on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-18"
+              data-badge-image="https://cdn.qwiklabs.com/0g8WHvroloyhyGxGRuZQWzFz6hdHb1MBBpAmNMqq9f0%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3695891">
+              <img src="https://cdn.qwiklabs.com/0g8WHvroloyhyGxGRuZQWzFz6hdHb1MBBpAmNMqq9f0%3D"
+                class="img-fluid rounded shadow-sm" alt="Build a Website on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Develop Serverless Apps with Firebase"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-17"
+              data-badge-image="https://cdn.qwiklabs.com/vi9U3TnPxXdjiaH1GwmBT2Q1GXpSJ%2FoWYVbWaxj%2FYpk%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3691369">
+              <img src="https://cdn.qwiklabs.com/vi9U3TnPxXdjiaH1GwmBT2Q1GXpSJ%2FoWYVbWaxj%2FYpk%3D"
+                class="img-fluid rounded shadow-sm" alt="Develop Serverless Apps with Firebase">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Develop Your Google Cloud Network"
+              data-badge-issuer="Google Skills" data-badge-date="2023-05-14"
+              data-badge-image="https://cdn.qwiklabs.com/Z5mHEcZSfjDvSjtBRmzjgY1O5B9uT%2BJME8KqR%2FgmmyI%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/3667776">
+              <img src="https://cdn.qwiklabs.com/Z5mHEcZSfjDvSjtBRmzjgY1O5B9uT%2BJME8KqR%2FgmmyI%3D"
+                class="img-fluid rounded shadow-sm" alt="Develop Your Google Cloud Network">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-30"
+              data-badge-image="https://cdn.qwiklabs.com/s41NLIs1riSUylD8%2FIfAfxIosbDQsQM0ONnRR1Mv73Y%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2925992">
+              <img src="https://cdn.qwiklabs.com/s41NLIs1riSUylD8%2FIfAfxIosbDQsQM0ONnRR1Mv73Y%3D"
+                class="img-fluid rounded shadow-sm" alt="Google Cloud Computing Foundations: Infrastructure in Google Cloud - Locales">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="DEPRECATED Site Reliability Engineering: Measuring and Managing Reliability"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-28"
+              data-badge-image="https://cdn.qwiklabs.com/DaKATZ%2FpR%2Ff8TZ%2BIHz5O6jqkz60gusaeODDUpmeIrkc%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2917801">
+              <img src="https://cdn.qwiklabs.com/DaKATZ%2FpR%2Ff8TZ%2BIHz5O6jqkz60gusaeODDUpmeIrkc%3D"
+                class="img-fluid rounded shadow-sm" alt="DEPRECATED Site Reliability Engineering: Measuring and Managing Reliability">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Scaling with Google Cloud Operations"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-28"
+              data-badge-image="https://cdn.qwiklabs.com/FFHSBIAwP4ziGGUzd1PbSHi9UFtXfO1lX%2Fi7qqDi0pM%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2916013">
+              <img src="https://cdn.qwiklabs.com/FFHSBIAwP4ziGGUzd1PbSHi9UFtXfO1lX%2Fi7qqDi0pM%3D"
+                class="img-fluid rounded shadow-sm" alt="Scaling with Google Cloud Operations">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Security & Identity Fundamentals"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-28"
+              data-badge-image="https://cdn.qwiklabs.com/JR0wU2VmW0y1Wklbq%2FdUnULlIz%2FEI2CQTfw7SlgB5Cc%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2915976">
+              <img src="https://cdn.qwiklabs.com/JR0wU2VmW0y1Wklbq%2FdUnULlIz%2FEI2CQTfw7SlgB5Cc%3D"
+                class="img-fluid rounded shadow-sm" alt="Security & Identity Fundamentals">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="DEPRECATED Applied Data: Blockchain"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-22"
+              data-badge-image="https://cdn.qwiklabs.com/gOBgtMPD6Vzqo3FH2fAfN0OmSRGhksEnZLxEldd9XMQ%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2899829">
+              <img src="https://cdn.qwiklabs.com/gOBgtMPD6Vzqo3FH2fAfN0OmSRGhksEnZLxEldd9XMQ%3D"
+                class="img-fluid rounded shadow-sm" alt="DEPRECATED Applied Data: Blockchain">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Cloud Engineering"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-21"
+              data-badge-image="https://cdn.qwiklabs.com/CK1Zt1Rct6URvfcD6V89kJapt5%2BrX8gcZoW6T6qpfhQ%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2891334">
+              <img src="https://cdn.qwiklabs.com/CK1Zt1Rct6URvfcD6V89kJapt5%2BrX8gcZoW6T6qpfhQ%3D"
+                class="img-fluid rounded shadow-sm" alt="Cloud Engineering">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="DEPRECATED Cloud Architecture"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-20"
+              data-badge-image="https://cdn.qwiklabs.com/VB4DlNGx2WUyGd9cUpF7Ci8Y9dFCglBTmKzLQMlPQNQ%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2888306">
+              <img src="https://cdn.qwiklabs.com/VB4DlNGx2WUyGd9cUpF7Ci8Y9dFCglBTmKzLQMlPQNQ%3D"
+                class="img-fluid rounded shadow-sm" alt="DEPRECATED Cloud Architecture">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Build Infrastructure with Terraform on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-20"
+              data-badge-image="https://cdn.qwiklabs.com/OeVF4KYcYdAnuD3pCsPLKSiC1wS%2Fvf1NNlYjOQHiOKY%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2886864">
+              <img src="https://cdn.qwiklabs.com/OeVF4KYcYdAnuD3pCsPLKSiC1wS%2Fvf1NNlYjOQHiOKY%3D"
+                class="img-fluid rounded shadow-sm" alt="Build Infrastructure with Terraform on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Optimize Costs for Google Kubernetes Engine"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-19"
+              data-badge-image="https://cdn.qwiklabs.com/CHDFI0dzs7CL4NoilDiO2HkdVqK5hUY1DJj9vN9jr1w%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2882823">
+              <img src="https://cdn.qwiklabs.com/CHDFI0dzs7CL4NoilDiO2HkdVqK5hUY1DJj9vN9jr1w%3D"
+                class="img-fluid rounded shadow-sm" alt="Optimize Costs for Google Kubernetes Engine">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Implementing Cloud Load Balancing for Compute Engine"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-19"
+              data-badge-image="https://cdn.qwiklabs.com/TbOoOcpQdNxRawSvSE3K5cbakxBmki8F%2FgjwN6yKY98%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2882298">
+              <img src="https://cdn.qwiklabs.com/TbOoOcpQdNxRawSvSE3K5cbakxBmki8F%2FgjwN6yKY98%3D"
+                class="img-fluid rounded shadow-sm" alt="Implementing Cloud Load Balancing for Compute Engine">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Measure Site Reliability using Cloud Operations Suite"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-17"
+              data-badge-image="https://cdn.qwiklabs.com/iPA0VCDrF9cwp7IHuuu7WGSTU%2FQOzlUQu4N%2BDayPZ6k%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2872619">
+              <img src="https://cdn.qwiklabs.com/iPA0VCDrF9cwp7IHuuu7WGSTU%2FQOzlUQu4N%2BDayPZ6k%3D"
+                class="img-fluid rounded shadow-sm" alt="Measure Site Reliability using Cloud Operations Suite">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Monitor Environments with Google Cloud Managed Service for Prometheus"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-13"
+              data-badge-image="https://cdn.qwiklabs.com/dv0KNZFzw9Sl5fLH5OfzP96bzmbyYmQ6OZcVT4W7aMI%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2859392">
+              <img src="https://cdn.qwiklabs.com/dv0KNZFzw9Sl5fLH5OfzP96bzmbyYmQ6OZcVT4W7aMI%3D"
+                class="img-fluid rounded shadow-sm" alt="Monitor Environments with Google Cloud Managed Service for Prometheus">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Set Up an App Dev Environment on Google Cloud"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-13"
+              data-badge-image="https://cdn.qwiklabs.com/SOUHCWvev6HmfC5QztXJd%2BCkSK8%2B3WGWg%2BF%2Fww%2FfqXA%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2857268">
+              <img src="https://cdn.qwiklabs.com/SOUHCWvev6HmfC5QztXJd%2BCkSK8%2B3WGWg%2BF%2Fww%2FfqXA%3D"
+                class="img-fluid rounded shadow-sm" alt="Set Up an App Dev Environment on Google Cloud">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-3">
+            <div class="badge-image-container" data-bs-toggle="modal" data-bs-target="#badgeModal"
+              data-badge-title="Baseline: Infrastructure"
+              data-badge-issuer="Google Skills" data-badge-date="2022-11-13"
+              data-badge-image="https://cdn.qwiklabs.com/Eg%2FSbOy66StYJSJgDWYLrHAMVb%2F28ZfyndLzHYtQPeA%3D"
+              data-badge-url="https://www.skills.google/public_profiles/04b343a4-bacc-4b5c-b3f6-09633d2d566c/badges/2857122">
+              <img src="https://cdn.qwiklabs.com/Eg%2FSbOy66StYJSJgDWYLrHAMVb%2F28ZfyndLzHYtQPeA%3D"
+                class="img-fluid rounded shadow-sm" alt="Baseline: Infrastructure">
+              <div class="badge-overlay">
+                <i class="bx bx-zoom-in"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Badge Wallet Section -->
+
+    <!-- Badge Modal -->
+    <div class="modal fade" id="badgeModal" tabindex="-1" aria-labelledby="badgeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="badgeModalLabel">Badge Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="modalBadgeImage" src="" class="img-fluid mb-3" alt="Badge image" style="max-height: 400px;">
+            <h4 id="modalBadgeTitle" class="mb-2"></h4>
+            <p id="modalBadgeIssuer" class="text-muted mb-1"></p>
+            <p id="modalBadgeDate" class="text-muted small mb-3"></p>
+            <a id="modalBadgeUrl" href="#" target="_blank" class="btn btn-primary">
+              <i class="bx bx-link-external"></i> View on Credly
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -349,7 +1040,7 @@
           <p>
             You can view the pdf version
             <a target="_blank"
-              href="https://drive.google.com/file/d/1P_yqHy0ctSel_7Pt4K2fe5XtoiffUqhj/view?usp=sharing">here</a>.
+              href="https://drive.google.com/file/d/1CiJWtPLFTE323DBfzjpwRtfTIhW22NA2/view?usp=sharing">here</a>.
           </p>
         </div>
 
@@ -382,27 +1073,27 @@
               </div>
               <ul>
                 <li>
-                  <strong>Architecture & Performance:</strong> Optimized backend architecture for mobile banking and 
-                  loan management applications serving 12,000+ users with 12,000+ monthly transactions, achieving 
+                  <strong>Architecture & Performance:</strong> Optimized backend architecture for mobile banking and
+                  loan management applications serving 12,000+ users with 12,000+ monthly transactions, achieving
                   25% reduction in data loading time through microservices architecture and clean code practices.
                 </li>
                 <li>
-                  <strong>Quality Assurance:</strong> Achieved 80% code coverage through comprehensive testing 
-                  strategies and optimized system performance by refactoring and enhancing existing codebase 
+                  <strong>Quality Assurance:</strong> Achieved 80% code coverage through comprehensive testing
+                  strategies and optimized system performance by refactoring and enhancing existing codebase
                   using TDD methodologies.
                 </li>
                 <li>
-                  <strong>System Development:</strong> Developed 12+ critical systems including user authentication, 
-                  invoice processing, face recognition integration, notification services, and application health 
+                  <strong>System Development:</strong> Developed 12+ critical systems including user authentication,
+                  invoice processing, face recognition integration, notification services, and application health
                   monitoring for both client and internal operations.
                 </li>
                 <li>
-                  <strong>Integration & Migration:</strong> Successfully integrated client core banking systems 
-                  into mobile banking and loan management platforms, and migrated architecture from single-instance 
+                  <strong>Integration & Migration:</strong> Successfully integrated client core banking systems
+                  into mobile banking and loan management platforms, and migrated architecture from single-instance
                   to shared-instance application for improved resource optimization.
                 </li>
                 <li>
-                  <strong>Technology Stack:</strong> Utilized Java Spring Boot, Go, MySQL, PostgreSQL, Redis, 
+                  <strong>Technology Stack:</strong> Utilized Java Spring Boot, Go, MySQL, PostgreSQL, Redis,
                   and Docker to build scalable and maintainable backend solutions for financial technology applications.
                 </li>
               </ul>
@@ -424,22 +1115,22 @@
               </div>
               <ul>
                 <li>
-                  <strong>API Development:</strong> Developed RESTful APIs for 5+ web and mobile projects using 
-                  Spring Boot with microservices architecture, implementing clean code principles and best practices 
+                  <strong>API Development:</strong> Developed RESTful APIs for 5+ web and mobile projects using
+                  Spring Boot with microservices architecture, implementing clean code principles and best practices
                   for maintainable and scalable backend solutions.
                 </li>
                 <li>
-                  <strong>Cross-functional Collaboration:</strong> Collaborated with frontend developers, mobile 
-                  developers, and product teams to design, develop, and launch new features, ensuring seamless 
+                  <strong>Cross-functional Collaboration:</strong> Collaborated with frontend developers, mobile
+                  developers, and product teams to design, develop, and launch new features, ensuring seamless
                   integration between frontend and backend systems.
                 </li>
                 <li>
-                  <strong>Quality & Performance:</strong> Achieved 80% code coverage through comprehensive testing 
-                  strategies and optimized system performance through systematic codebase refactoring and 
+                  <strong>Quality & Performance:</strong> Achieved 80% code coverage through comprehensive testing
+                  strategies and optimized system performance through systematic codebase refactoring and
                   performance tuning.
                 </li>
                 <li>
-                  <strong>Technology Implementation:</strong> Worked with Java, Spring Boot, MySQL, and Docker 
+                  <strong>Technology Implementation:</strong> Worked with Java, Spring Boot, MySQL, and Docker
                   to build robust backend systems that supported multiple client applications and services.
                 </li>
               </ul>
@@ -874,6 +1565,36 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Badge Modal JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const badgeModal = document.getElementById('badgeModal');
+      const modalBadgeImage = document.getElementById('modalBadgeImage');
+      const modalBadgeTitle = document.getElementById('modalBadgeTitle');
+      const modalBadgeIssuer = document.getElementById('modalBadgeIssuer');
+      const modalBadgeDate = document.getElementById('modalBadgeDate');
+      const modalBadgeUrl = document.getElementById('modalBadgeUrl');
+
+      // Handle badge card clicks
+      document.querySelectorAll('.badge-image-container').forEach(function (container) {
+        container.addEventListener('click', function () {
+          const title = this.getAttribute('data-badge-title');
+          const issuer = this.getAttribute('data-badge-issuer');
+          const date = this.getAttribute('data-badge-date');
+          const image = this.getAttribute('data-badge-image');
+          const url = this.getAttribute('data-badge-url');
+
+          modalBadgeTitle.textContent = title;
+          modalBadgeIssuer.textContent = issuer;
+          modalBadgeDate.textContent = date;
+          modalBadgeImage.src = image;
+          modalBadgeImage.alt = title;
+          modalBadgeUrl.href = url;
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
