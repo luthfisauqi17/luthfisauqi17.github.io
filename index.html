@@ -1,1280 +1,2070 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-P5V8W68SWH"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P5V8W68SWH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+      gtag("config", "G-P5V8W68SWH");
+    </script>
 
-    gtag("config", "G-P5V8W68SWH");
-  </script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Luthfi Syauqi | Backend Engineer</title>
+    <meta
+      content="Backend engineer with 3+ years in FinTech. I build scalable APIs, microservices, and banking systems. Open to new opportunities — Spring Boot, Golang, Java."
+      name="description"
+    />
+    <meta
+      content="backend engineer, software developer, Java developer, Spring Boot, Golang, microservices, fintech developer, API development, system integration, Indonesia"
+      name="keywords"
+    />
 
-  <title>Luthfi Syauqi | Backend Engineer</title>
-  <meta content="Backend engineer with 3+ years in FinTech. I build scalable APIs, microservices, and banking systems. Open to new opportunities — Spring Boot, Golang, Java." name="description" />
-  <meta content="backend engineer, software developer, Java developer, Spring Boot, Golang, microservices, fintech developer, API development, system integration, Indonesia" name="keywords" />
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon" />
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet" />
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- Badge Wallet Custom CSS -->
+    <style>
+      .badge-image-container {
+        position: relative;
+        overflow: hidden;
+        cursor: zoom-in;
+        transition: transform 0.3s ease;
+        border-radius: 0.375rem;
+      }
 
-  <!-- Badge Wallet Custom CSS -->
-  <style>
-    .badge-image-container {
-      position: relative;
-      overflow: hidden;
-      cursor: zoom-in;
-      transition: transform 0.3s ease;
-      border-radius: 0.375rem;
-    }
+      .badge-image-container:hover {
+        transform: scale(1.05);
+      }
 
-    .badge-image-container:hover {
-      transform: scale(1.05);
-    }
+      .badge-image-container img {
+        transition: transform 0.3s ease;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
 
-    .badge-image-container img {
-      transition: transform 0.3s ease;
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1;
-      object-fit: cover;
-    }
+      .badge-image-container:hover img {
+        transform: scale(1.1);
+      }
 
-    .badge-image-container:hover img {
-      transform: scale(1.1);
-    }
+      .badge-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 0.375rem;
+      }
 
-    .badge-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-      border-radius: 0.375rem;
-    }
+      .badge-image-container:hover .badge-overlay {
+        opacity: 1;
+      }
 
-    .badge-image-container:hover .badge-overlay {
-      opacity: 1;
-    }
+      .badge-overlay i {
+        color: white;
+        font-size: 2rem;
+      }
+    </style>
 
-    .badge-overlay i {
-      color: white;
-      font-size: 2rem;
-    }
-  </style>
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: iPortfolio
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
   * Updated: Mar 17 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body>
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-      <div class="profile">
-        <img src="assets/img/profile-img.png" alt="" class="img-fluid rounded-circle" />
-        <h1 class="text-light"><a href="index.html">Luthfi Syauqi</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a target="_blank" href="https://www.linkedin.com/in/luthfi-syauqi-magesta/" class="linkedin"><i
-              class="bx bxl-linkedin"></i></a>
-          <a target="_blank" href="https://dev.to/luthfisauqi17" class="dev-it"><i class="bx bxl-dev-to"></i></a>
-          <a target="_blank" href="https://medium.com/@luthfisauqi17_68455" class="medium"><i
-              class="bx bxl-medium"></i></a>
-          <a target="_blank" href="https://github.com/luthfisauqi17" class="github"><i class="bx bxl-github"></i></a>
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="assets/img/profile-img.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html">Luthfi Syauqi</a></h1>
+          <div class="social-links mt-3 text-center">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/luthfi-syauqi-magesta/"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://dev.to/luthfisauqi17"
+              class="dev-it"
+              ><i class="bx bxl-dev-to"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://medium.com/@luthfisauqi17_68455"
+              class="medium"
+              ><i class="bx bxl-medium"></i
+            ></a>
+            <a
+              target="_blank"
+              href="https://github.com/luthfisauqi17"
+              class="github"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
         </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="#hero" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#services" class="nav-link scrollto"
+                ><i class="bx bx-server"></i> <span>Services</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"
+                ><i class="bx bx-brain"></i> <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Resume</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#blog" class="nav-link scrollto"
+                ><i class="bx bx-pen"></i> <span>Articles</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
       </div>
+    </header>
+    <!-- End Header -->
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li>
-            <a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a>
-          </li>
-          <li>
-            <a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a>
-          </li>
-          <li>
-            <a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a>
-          </li>
-          <li>
-            <a href="#skills" class="nav-link scrollto"><i class="bx bx-brain"></i> <span>Skills</span></a>
-          </li>
-          <li>
-            <a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
-          </li>
-          <li>
-            <a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
-          </li>
-          <li>
-            <a href="#blog" class="nav-link scrollto"><i class="bx bx-pen"></i> <span>Articles</span></a>
-          </li>
-          <li>
-            <a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a>
-          </li>
-        </ul>
-      </nav>
-      <!-- .nav-menu -->
-    </div>
-  </header>
-  <!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-
-      <h1>I Build Scalable Backend Systems<br>That Drive Business Growth</h1>
-      <p>
-        <span class="typed"
-          data-typed-items="Backend APIs, FinTech Systems, Microservices, System Integration, Database Optimization"></span>
-      </p>
-      <div class="hero-btns mb-4">
-        <a href="#portfolio" class="btn-hero-primary scrollto">View My Work</a>
-        <a href="#contact" class="btn-hero-outline scrollto">Contact Me</a>
-      </div>
-      
-      <div class="hero-toc mt-4 d-none d-md-block" style="opacity: 0.9;">
-        <span style="color: rgba(255,255,255,0.7); font-size: 12px; text-transform: uppercase; letter-spacing: 2px; font-weight: 600;">Explore</span>
-        <ul class="list-inline mt-2 mb-0">
-          <li class="list-inline-item"><a href="#services" class="scrollto" style="color: #fff; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; text-decoration: none; transition: 0.3s;">What I Do</a></li>
-          <li class="list-inline-item mx-2" style="color: rgba(255,255,255,0.4);">/</li>
-          <li class="list-inline-item"><a href="#resume" class="scrollto" style="color: #fff; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; text-decoration: none; transition: 0.3s;">Experience</a></li>
-          <li class="list-inline-item mx-2" style="color: rgba(255,255,255,0.4);">/</li>
-          <li class="list-inline-item"><a href="#portfolio" class="scrollto" style="color: #fff; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; text-decoration: none; transition: 0.3s;">Portfolio</a></li>
-          <li class="list-inline-item mx-2" style="color: rgba(255,255,255,0.4);">/</li>
-          <li class="list-inline-item"><a href="#blog" class="scrollto" style="color: #fff; font-size: 15px; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 2px; text-decoration: none; transition: 0.3s;">Articles</a></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero -->
-
-  <main id="main">
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About Me</h2>
-          <p>
-            Backend engineer with 3+ years building scalable, secure systems in FinTech. I've led the development of Mobile Banking and Loan Management platforms at MAMPU.IO — serving 12,000+ users with thousands of monthly transactions across rural banks and cooperatives in Indonesia.
-          </p>
-          <p class="mt-3">
-            I specialize in service-oriented architectures, event-driven systems, and integrating core banking, payment gateways, and digital identity services. I turn complex business requirements into robust, production-ready backend solutions.
-          </p>
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="hero-container" data-aos="fade-in">
+        <h1>
+          I Build Scalable Backend Systems<br />That Drive Business Growth
+        </h1>
+        <p>
+          <span
+            class="typed"
+            data-typed-items="Backend APIs, FinTech Systems, Microservices, System Integration, Database Optimization"
+          ></span>
+        </p>
+        <div class="hero-btns mb-4">
+          <a href="#portfolio" class="btn-hero-primary scrollto"
+            >View My Work</a
+          >
+          <a href="#contact" class="btn-hero-outline scrollto">Contact Me</a>
         </div>
-        <div class="row g-3 mt-2" data-aos="fade-up">
-          <div class="col-6 col-md-3">
-            <div class="stat-card">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="2">0</span><span class="stat-suffix">+</span>
-              <p>Years Experience</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stat-card">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="12000" data-purecounter-duration="2">0</span><span class="stat-suffix">+</span>
-              <p>Users Served</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stat-card">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="2">0</span><span class="stat-suffix">+</span>
-              <p>Systems Built</p>
-            </div>
-          </div>
-          <div class="col-6 col-md-3">
-            <div class="stat-card">
-              <span class="purecounter" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">0</span><span class="stat-suffix">+</span>
-              <p>APIs Developed</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>What I can build for you — from API design to production deployment.</p>
-        </div>
-        <div class="row g-4" data-aos="fade-up">
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-code-alt"></i></div>
-              <h4>Backend API Development</h4>
-              <p>High-performance RESTful APIs built with Spring Boot, Go, or Laravel — designed for scalability and security from day one.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-credit-card"></i></div>
-              <h4>FinTech System Integration</h4>
-              <p>Core banking, payment gateways, digital identity verification, and loan processing integrations with battle-tested reliability.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-grid-alt"></i></div>
-              <h4>Microservices Architecture</h4>
-              <p>Event-driven, containerized microservices that scale independently — built for high availability and performance.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-data"></i></div>
-              <h4>Database Design & Optimization</h4>
-              <p>Schema design, query optimization, and caching strategies with MySQL, PostgreSQL, Redis, and MongoDB.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-transfer"></i></div>
-              <h4>System Migration & Modernization</h4>
-              <p>Monolith-to-microservices migration, legacy system refactoring, and architecture modernization without downtime.</p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="service-item">
-              <div class="service-icon"><i class="bx bx-cloud"></i></div>
-              <h4>DevOps & Deployment</h4>
-              <p>Docker containerization, CI/CD pipelines, GCP deployment, and production monitoring for reliable systems.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Services Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Skills & Knowledge</h2>
-        </div>
-        <div class="row g-3 skills-content" data-aos="fade-up">
-          <div class="col-lg-6 col-md-6">
-            <div class="skills-card">
-              <h5><i class="bx bx-code-alt"></i> Languages & Frameworks</h5>
-              <ul class="skills-list">
-                <li><i class="devicon-java-plain"></i> Java</li>
-                <li><i class="devicon-go-original-wordmark"></i> Golang</li>
-                <li><i class="devicon-php-plain"></i> PHP</li>
-                <li><i class="devicon-python-plain"></i> Python</li>
-                <li><i class="devicon-javascript-plain"></i> JavaScript</li>
-                <li><i class="devicon-c-plain"></i> C</li>
-                <li><i class="devicon-cplusplus-plain"></i> C++</li>
-                <li><i class="devicon-spring-original"></i> Spring Boot</li>
-                <li><i class="devicon-spring-original"></i> Spring Security</li>
-                <li><i class="devicon-spring-original"></i> Spring Data JPA</li>
-                <li><i class="devicon-laravel-original"></i> Laravel</li>
-                <li>Gin (Go)</li>
-                <li>Echo (Go)</li>
-                <li>Flask</li>
-                <li>Express.js</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="skills-card">
-              <h5><i class="bx bx-data"></i> Databases & Caching</h5>
-              <ul class="skills-list">
-                <li><i class="devicon-mysql-original"></i> MySQL</li>
-                <li><i class="devicon-postgresql-plain"></i> PostgreSQL</li>
-                <li><i class="devicon-sqlite-plain"></i> SQLite</li>
-                <li>H2</li>
-                <li><i class="devicon-redis-plain"></i> Redis</li>
-                <li><i class="devicon-mongodb-plain"></i> MongoDB</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="skills-card">
-              <h5><i class="bx bx-wrench"></i> Tools & DevOps</h5>
-              <ul class="skills-list">
-                <li><i class="devicon-git-plain"></i> Git</li>
-                <li><i class="devicon-github-original"></i> GitHub</li>
-                <li><i class="devicon-gitlab-plain"></i> GitLab</li>
-                <li><i class="devicon-docker-plain"></i> Docker</li>
-                <li>Docker Compose</li>
-                <li><i class="devicon-firebase-plain"></i> Firebase</li>
-                <li>FCM</li>
-                <li>Postman</li>
-                <li>Swagger/OpenAPI</li>
-                <li>JUnit</li>
-                <li>Mockito</li>
-                <li><i class="devicon-googlecloud-plain"></i> GCP</li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="skills-card">
-              <h5><i class="bx bx-bulb"></i> Methodologies</h5>
-              <ul class="skills-list">
-                <li>Clean Code & SOLID</li>
-                <li>TDD</li>
-                <li>Microservices</li>
-                <li>RESTful API Design</li>
-                <li>Event-Driven Architecture</li>
-                <li>DB Design & Optimization</li>
-                <li>Agile & Scrum</li>
-                <li>Kanban</li>
-                <li>Trunk Based Dev</li>
-                <li>CI/CD Pipeline</li>
-                <li>API Security</li>
-                <li>System Integration</li>
-              </ul>
-            </div>
-          </div>
+        <div class="hero-toc mt-4 d-none d-md-block" style="opacity: 0.9">
+          <span
+            style="
+              color: rgba(255, 255, 255, 0.7);
+              font-size: 12px;
+              text-transform: uppercase;
+              letter-spacing: 2px;
+              font-weight: 600;
+            "
+            >Explore</span
+          >
+          <ul class="list-inline mt-2 mb-0">
+            <li class="list-inline-item">
+              <a
+                href="#services"
+                class="scrollto"
+                style="
+                  color: #fff;
+                  font-size: 15px;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                  padding-bottom: 2px;
+                  text-decoration: none;
+                  transition: 0.3s;
+                "
+                >What I Do</a
+              >
+            </li>
+            <li
+              class="list-inline-item mx-2"
+              style="color: rgba(255, 255, 255, 0.4)"
+            >
+              /
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="#resume"
+                class="scrollto"
+                style="
+                  color: #fff;
+                  font-size: 15px;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                  padding-bottom: 2px;
+                  text-decoration: none;
+                  transition: 0.3s;
+                "
+                >Experience</a
+              >
+            </li>
+            <li
+              class="list-inline-item mx-2"
+              style="color: rgba(255, 255, 255, 0.4)"
+            >
+              /
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="#portfolio"
+                class="scrollto"
+                style="
+                  color: #fff;
+                  font-size: 15px;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                  padding-bottom: 2px;
+                  text-decoration: none;
+                  transition: 0.3s;
+                "
+                >Portfolio</a
+              >
+            </li>
+            <li
+              class="list-inline-item mx-2"
+              style="color: rgba(255, 255, 255, 0.4)"
+            >
+              /
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="#blog"
+                class="scrollto"
+                style="
+                  color: #fff;
+                  font-size: 15px;
+                  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                  padding-bottom: 2px;
+                  text-decoration: none;
+                  transition: 0.3s;
+                "
+                >Articles</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <!-- End Skills Section -->
+    <!-- End Hero -->
 
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Summary</h3>
-            <div class="resume-item pb-0">
-              <p>
-                <em>Passionate Software Engineer with over 3 years of dedicated experience in Backend System Development, specializing in crafting robust and efficient software solutions.</em>
-              </p>
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About Me</h2>
+            <p>
+              Backend engineer with 3+ years building scalable, secure systems
+              in FinTech. I've led the development of Mobile Banking and Loan
+              Management platforms at MAMPU.IO — serving 12,000+ users with
+              thousands of monthly transactions across rural banks and
+              cooperatives in Indonesia.
+            </p>
+            <p class="mt-3">
+              I specialize in service-oriented architectures, event-driven
+              systems, and integrating core banking, payment gateways, and
+              digital identity services. I turn complex business requirements
+              into robust, production-ready backend solutions.
+            </p>
+          </div>
+          <div class="row g-3 mt-2" data-aos="fade-up">
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="3"
+                  data-purecounter-duration="2"
+                  >0</span
+                ><span class="stat-suffix">+</span>
+                <p>Years Experience</p>
+              </div>
             </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="12000"
+                  data-purecounter-duration="2"
+                  >0</span
+                ><span class="stat-suffix">+</span>
+                <p>Users Served</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="12"
+                  data-purecounter-duration="2"
+                  >0</span
+                ><span class="stat-suffix">+</span>
+                <p>Systems Built</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="stat-card">
+                <span
+                  class="purecounter"
+                  data-purecounter-start="0"
+                  data-purecounter-end="50"
+                  data-purecounter-duration="2"
+                  >0</span
+                ><span class="stat-suffix">+</span>
+                <p>APIs Developed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
 
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="accordion custom-accordion" id="experienceAccordion">
-              <!-- Mampu.io — expanded by default -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingMampu">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMampu" aria-expanded="true" aria-controls="collapseMampu">
-                    <div class="d-flex align-items-center gap-3 w-100">
-                      <img class="img-fluid border border-0" src="assets/img/resume/mampu.jpeg" alt="Mampu.io" style="width:36px;height:36px;border-radius:6px;" />
-                      <div>
-                        <strong>Backend Engineer</strong> · <a target="_blank" class="text-decoration-none" href="https://mampu.io/">Mampu.io</a>
-                        <br><small class="text-muted">May 2023 - Present · West Jakarta</small>
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Services</h2>
+            <p>
+              What I can build for you — from API design to production
+              deployment.
+            </p>
+          </div>
+          <div class="row g-4" data-aos="fade-up">
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon"><i class="bx bx-code-alt"></i></div>
+                <h4>Backend API Development</h4>
+                <p>
+                  High-performance RESTful APIs built with Spring Boot, Go, or
+                  Laravel — designed for scalability and security from day one.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon">
+                  <i class="bx bx-credit-card"></i>
+                </div>
+                <h4>FinTech System Integration</h4>
+                <p>
+                  Core banking, payment gateways, digital identity verification,
+                  and loan processing integrations with battle-tested
+                  reliability.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon"><i class="bx bx-grid-alt"></i></div>
+                <h4>Microservices Architecture</h4>
+                <p>
+                  Event-driven, containerized microservices that scale
+                  independently — built for high availability and performance.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon"><i class="bx bx-data"></i></div>
+                <h4>Database Design & Optimization</h4>
+                <p>
+                  Schema design, query optimization, and caching strategies with
+                  MySQL, PostgreSQL, Redis, and MongoDB.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon"><i class="bx bx-transfer"></i></div>
+                <h4>System Migration & Modernization</h4>
+                <p>
+                  Monolith-to-microservices migration, legacy system
+                  refactoring, and architecture modernization without downtime.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="service-item">
+                <div class="service-icon"><i class="bx bx-cloud"></i></div>
+                <h4>DevOps & Deployment</h4>
+                <p>
+                  Docker containerization, CI/CD pipelines, GCP deployment, and
+                  production monitoring for reliable systems.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills & Knowledge</h2>
+          </div>
+          <div class="row g-3 skills-content" data-aos="fade-up">
+            <div class="col-lg-6 col-md-6">
+              <div class="skills-card">
+                <h5><i class="bx bx-code-alt"></i> Languages & Frameworks</h5>
+                <ul class="skills-list">
+                  <li><i class="devicon-java-plain"></i> Java</li>
+                  <li><i class="devicon-go-original-wordmark"></i> Golang</li>
+                  <li><i class="devicon-php-plain"></i> PHP</li>
+                  <li><i class="devicon-python-plain"></i> Python</li>
+                  <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                  <li><i class="devicon-c-plain"></i> C</li>
+                  <li><i class="devicon-cplusplus-plain"></i> C++</li>
+                  <li><i class="devicon-spring-original"></i> Spring Boot</li>
+                  <li>
+                    <i class="devicon-spring-original"></i> Spring Security
+                  </li>
+                  <li>
+                    <i class="devicon-spring-original"></i> Spring Data JPA
+                  </li>
+                  <li><i class="devicon-laravel-original"></i> Laravel</li>
+                  <li>Gin (Go)</li>
+                  <li>Echo (Go)</li>
+                  <li>Flask</li>
+                  <li>Express.js</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="skills-card">
+                <h5><i class="bx bx-data"></i> Databases & Caching</h5>
+                <ul class="skills-list">
+                  <li><i class="devicon-mysql-original"></i> MySQL</li>
+                  <li><i class="devicon-postgresql-plain"></i> PostgreSQL</li>
+                  <li><i class="devicon-sqlite-plain"></i> SQLite</li>
+                  <li>H2</li>
+                  <li><i class="devicon-redis-plain"></i> Redis</li>
+                  <li><i class="devicon-mongodb-plain"></i> MongoDB</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="skills-card">
+                <h5><i class="bx bx-wrench"></i> Tools & DevOps</h5>
+                <ul class="skills-list">
+                  <li><i class="devicon-git-plain"></i> Git</li>
+                  <li><i class="devicon-github-original"></i> GitHub</li>
+                  <li><i class="devicon-gitlab-plain"></i> GitLab</li>
+                  <li><i class="devicon-docker-plain"></i> Docker</li>
+                  <li>Docker Compose</li>
+                  <li><i class="devicon-firebase-plain"></i> Firebase</li>
+                  <li>FCM</li>
+                  <li>Postman</li>
+                  <li>Swagger/OpenAPI</li>
+                  <li>JUnit</li>
+                  <li>Mockito</li>
+                  <li><i class="devicon-googlecloud-plain"></i> GCP</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="skills-card">
+                <h5><i class="bx bx-bulb"></i> Methodologies</h5>
+                <ul class="skills-list">
+                  <li>Clean Code & SOLID</li>
+                  <li>TDD</li>
+                  <li>Microservices</li>
+                  <li>RESTful API Design</li>
+                  <li>Event-Driven Architecture</li>
+                  <li>DB Design & Optimization</li>
+                  <li>Agile & Scrum</li>
+                  <li>Kanban</li>
+                  <li>Trunk Based Dev</li>
+                  <li>CI/CD Pipeline</li>
+                  <li>API Security</li>
+                  <li>System Integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2>Resume</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Summary</h3>
+              <div class="resume-item pb-0">
+                <p>
+                  <em
+                    >Passionate Software Engineer with over 3 years of dedicated
+                    experience in Backend System Development, specializing in
+                    crafting robust and efficient software solutions.</em
+                  >
+                </p>
+              </div>
+
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="accordion custom-accordion" id="experienceAccordion">
+                <!-- Mampu.io — expanded by default -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingMampu">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseMampu"
+                      aria-expanded="true"
+                      aria-controls="collapseMampu"
+                    >
+                      <div class="d-flex align-items-center gap-3 w-100">
+                        <img
+                          class="img-fluid border border-0"
+                          src="assets/img/resume/mampu.jpeg"
+                          alt="Mampu.io"
+                          style="width: 36px; height: 36px; border-radius: 6px"
+                        />
+                        <div>
+                          <strong>Backend Engineer</strong> ·
+                          <a
+                            target="_blank"
+                            class="text-decoration-none"
+                            href="https://mampu.io/"
+                            >Mampu.io</a
+                          >
+                          <br /><small class="text-muted"
+                            >May 2023 - Present · West Jakarta</small
+                          >
+                        </div>
                       </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseMampu"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingMampu"
+                    data-bs-parent="#experienceAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          <strong>Architecture & Performance:</strong> Optimized
+                          backend for mobile banking and loan management
+                          (12,000+ users, 25% faster data loading).
+                        </li>
+                        <li>
+                          <strong>Quality:</strong> 80% code coverage via TDD;
+                          systematic refactoring and performance tuning.
+                        </li>
+                        <li>
+                          <strong>Systems Built:</strong> 12+ critical systems —
+                          auth, invoicing, face recognition, notifications,
+                          health monitoring.
+                        </li>
+                        <li>
+                          <strong>Integration:</strong> Core banking system
+                          integration; migrated from single-instance to
+                          shared-instance architecture.
+                        </li>
+                        <li>
+                          <strong>Stack:</strong> Java Spring Boot, Go, MySQL,
+                          PostgreSQL, Redis, Docker.
+                        </li>
+                      </ul>
                     </div>
-                  </button>
-                </h2>
-                <div id="collapseMampu" class="accordion-collapse collapse show" aria-labelledby="headingMampu" data-bs-parent="#experienceAccordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li><strong>Architecture & Performance:</strong> Optimized backend for mobile banking and loan management (12,000+ users, 25% faster data loading).</li>
-                      <li><strong>Quality:</strong> 80% code coverage via TDD; systematic refactoring and performance tuning.</li>
-                      <li><strong>Systems Built:</strong> 12+ critical systems — auth, invoicing, face recognition, notifications, health monitoring.</li>
-                      <li><strong>Integration:</strong> Core banking system integration; migrated from single-instance to shared-instance architecture.</li>
-                      <li><strong>Stack:</strong> Java Spring Boot, Go, MySQL, PostgreSQL, Redis, Docker.</li>
-                    </ul>
+                  </div>
+                </div>
+                <!-- KlikCair -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingKlikCair">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseKlikCair"
+                      aria-expanded="false"
+                      aria-controls="collapseKlikCair"
+                    >
+                      <div class="d-flex align-items-center gap-3 w-100">
+                        <img
+                          class="img-fluid border border-0"
+                          src="assets/img/resume/klikcair.jpeg"
+                          alt="KlikCair"
+                          style="width: 36px; height: 36px; border-radius: 6px"
+                        />
+                        <div>
+                          <strong>Backend Engineer</strong> ·
+                          <a
+                            target="_blank"
+                            class="text-decoration-none"
+                            href="https://klikcair.com/"
+                            >KlikCair</a
+                          >
+                          <br /><small class="text-muted"
+                            >Jan 2022 - May 2023 · West Jakarta</small
+                          >
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseKlikCair"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingKlikCair"
+                    data-bs-parent="#experienceAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          RESTful APIs for 5+ web/mobile projects with Spring
+                          Boot microservices.
+                        </li>
+                        <li>
+                          Cross-functional collaboration with frontend, mobile,
+                          and product teams.
+                        </li>
+                        <li>
+                          80% code coverage; systematic performance
+                          optimization.
+                        </li>
+                        <li>Stack: Java, Spring Boot, MySQL, Docker.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- BPPTIK -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingBPPTIK">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseBPPTIK"
+                      aria-expanded="false"
+                      aria-controls="collapseBPPTIK"
+                    >
+                      <div class="d-flex align-items-center gap-3 w-100">
+                        <img
+                          class="img-fluid border border-0"
+                          src="assets/img/resume/bpptik.jpeg"
+                          alt="BPPTIK Kominfo"
+                          style="width: 36px; height: 36px; border-radius: 6px"
+                        />
+                        <div>
+                          <strong>Backend Engineer Intern</strong> ·
+                          <a
+                            target="_blank"
+                            class="text-decoration-none"
+                            href="https://bpptik.kominfo.go.id/"
+                            >BPPTIK Kominfo</a
+                          >
+                          <br /><small class="text-muted"
+                            >May 2021 - Sept 2021 · Cikarang</small
+                          >
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseBPPTIK"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingBPPTIK"
+                    data-bs-parent="#experienceAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Team leader; demonstrated application progress in
+                          monthly meetings.
+                        </li>
+                        <li>Developed and deployed REST APIs using Laravel.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Teaching Assistant -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTA">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTA"
+                      aria-expanded="false"
+                      aria-controls="collapseTA"
+                    >
+                      <div class="d-flex align-items-center gap-3 w-100">
+                        <img
+                          class="img-fluid border border-0"
+                          src="assets/img/resume/presuniv.jpeg"
+                          alt="Presuniv"
+                          style="width: 36px; height: 36px; border-radius: 6px"
+                        />
+                        <div>
+                          <strong>Teaching Assistant</strong> ·
+                          <a
+                            target="_blank"
+                            class="text-decoration-none"
+                            href="https://president.ac.id/"
+                            >President University</a
+                          >
+                          <br /><small class="text-muted"
+                            >Jan 2021 - May 2021 · Cikarang</small
+                          >
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTA"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTA"
+                    data-bs-parent="#experienceAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Taught Python coding and Big Data; graded lab
+                          assignments.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- PUMA Computing -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingPUMA">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapsePUMA"
+                      aria-expanded="false"
+                      aria-controls="collapsePUMA"
+                    >
+                      <div class="d-flex align-items-center gap-3 w-100">
+                        <img
+                          class="img-fluid border border-0"
+                          src="assets/img/resume/pumacomputing.jpeg"
+                          alt="PUMA Computing"
+                          style="width: 36px; height: 36px; border-radius: 6px"
+                        />
+                        <div>
+                          <strong>Web Developer & Club Mentor</strong> ·
+                          <a
+                            target="_blank"
+                            class="text-decoration-none"
+                            href="https://computing.president.ac.id/"
+                            >PUMA Computing</a
+                          >
+                          <br /><small class="text-muted"
+                            >Jan 2019 - Jan 2020 · Cikarang</small
+                          >
+                        </div>
+                      </div>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapsePUMA"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingPUMA"
+                    data-bs-parent="#experienceAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul>
+                        <li>
+                          Student Development team; weekly computer club
+                          teaching; faculty website maintenance.
+                        </li>
+                        <li>
+                          Vice Project Manager for Comparative Study with Budi
+                          Luhur University.
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
-              <!-- KlikCair -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingKlikCair">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKlikCair" aria-expanded="false" aria-controls="collapseKlikCair">
-                    <div class="d-flex align-items-center gap-3 w-100">
-                      <img class="img-fluid border border-0" src="assets/img/resume/klikcair.jpeg" alt="KlikCair" style="width:36px;height:36px;border-radius:6px;" />
-                      <div>
-                        <strong>Backend Engineer</strong> · <a target="_blank" class="text-decoration-none" href="https://klikcair.com/">KlikCair</a>
-                        <br><small class="text-muted">Jan 2022 - May 2023 · West Jakarta</small>
-                      </div>
-                    </div>
-                  </button>
-                </h2>
-                <div id="collapseKlikCair" class="accordion-collapse collapse" aria-labelledby="headingKlikCair" data-bs-parent="#experienceAccordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>RESTful APIs for 5+ web/mobile projects with Spring Boot microservices.</li>
-                      <li>Cross-functional collaboration with frontend, mobile, and product teams.</li>
-                      <li>80% code coverage; systematic performance optimization.</li>
-                      <li>Stack: Java, Spring Boot, MySQL, Docker.</li>
-                    </ul>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <div class="row align-items-center">
+                  <div class="col-2 text-center">
+                    <img
+                      class="img-fluid border border-0"
+                      src="assets/img/resume/presuniv.jpeg"
+                      alt="Presuniv"
+                    />
+                  </div>
+                  <div class="col-10">
+                    <h4>
+                      Bachelor of Science in Computing, Information Technology
+                    </h4>
+                    <h5>2018 - 2022</h5>
+                    <p>
+                      <em
+                        ><strong
+                          ><a
+                            target="_blank"
+                            class="text-dark text-decoration-none"
+                            href="https://president.ac.id/"
+                            >President University</a
+                          ></strong
+                        >, Cikarang, West Java</em
+                      >
+                    </p>
                   </div>
                 </div>
+                <p>Cum. GPA: <strong>3.85</strong> out of 4.00</p>
+                <p>
+                  Research: CNN-Based Application To Help Students Learn
+                  American Sign Language (ASL)
+                </p>
               </div>
-              <!-- BPPTIK -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingBPPTIK">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBPPTIK" aria-expanded="false" aria-controls="collapseBPPTIK">
-                    <div class="d-flex align-items-center gap-3 w-100">
-                      <img class="img-fluid border border-0" src="assets/img/resume/bpptik.jpeg" alt="BPPTIK Kominfo" style="width:36px;height:36px;border-radius:6px;" />
-                      <div>
-                        <strong>Backend Engineer Intern</strong> · <a target="_blank" class="text-decoration-none" href="https://bpptik.kominfo.go.id/">BPPTIK Kominfo</a>
-                        <br><small class="text-muted">May 2021 - Sept 2021 · Cikarang</small>
-                      </div>
-                    </div>
-                  </button>
-                </h2>
-                <div id="collapseBPPTIK" class="accordion-collapse collapse" aria-labelledby="headingBPPTIK" data-bs-parent="#experienceAccordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Team leader; demonstrated application progress in monthly meetings.</li>
-                      <li>Developed and deployed REST APIs using Laravel.</li>
-                    </ul>
-                  </div>
+              <h3 class="resume-title">Work Project</h3>
+              <div class="resume-item">
+                <h4>Mobile Banking Koperasi</h4>
+                <div class="mb-3">
+                  <p class="mb-0">
+                    Seamless and secure Koperasi member finance management.
+                  </p>
+                  <a
+                    target="_blank"
+                    href="https://mampu.io/mobile-banking-koperasi/"
+                    >Learn more</a
+                  >
                 </div>
               </div>
-              <!-- Teaching Assistant -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTA">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTA" aria-expanded="false" aria-controls="collapseTA">
-                    <div class="d-flex align-items-center gap-3 w-100">
-                      <img class="img-fluid border border-0" src="assets/img/resume/presuniv.jpeg" alt="Presuniv" style="width:36px;height:36px;border-radius:6px;" />
-                      <div>
-                        <strong>Teaching Assistant</strong> · <a target="_blank" class="text-decoration-none" href="https://president.ac.id/">President University</a>
-                        <br><small class="text-muted">Jan 2021 - May 2021 · Cikarang</small>
-                      </div>
-                    </div>
-                  </button>
-                </h2>
-                <div id="collapseTA" class="accordion-collapse collapse" aria-labelledby="headingTA" data-bs-parent="#experienceAccordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Taught Python coding and Big Data; graded lab assignments.</li>
-                    </ul>
-                  </div>
+              <div class="resume-item">
+                <h4>Mobile Banking BPR</h4>
+                <div class="mb-3">
+                  <p class="mb-0">
+                    Seamless and secure BPR member finance management.
+                  </p>
+                  <a target="_blank" href="https://mampu.io/mobile-banking-bpr/"
+                    >Learn more</a
+                  >
                 </div>
               </div>
-              <!-- PUMA Computing -->
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingPUMA">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePUMA" aria-expanded="false" aria-controls="collapsePUMA">
-                    <div class="d-flex align-items-center gap-3 w-100">
-                      <img class="img-fluid border border-0" src="assets/img/resume/pumacomputing.jpeg" alt="PUMA Computing" style="width:36px;height:36px;border-radius:6px;" />
-                      <div>
-                        <strong>Web Developer & Club Mentor</strong> · <a target="_blank" class="text-decoration-none" href="https://computing.president.ac.id/">PUMA Computing</a>
-                        <br><small class="text-muted">Jan 2019 - Jan 2020 · Cikarang</small>
-                      </div>
-                    </div>
-                  </button>
-                </h2>
-                <div id="collapsePUMA" class="accordion-collapse collapse" aria-labelledby="headingPUMA" data-bs-parent="#experienceAccordion">
-                  <div class="accordion-body">
-                    <ul>
-                      <li>Student Development team; weekly computer club teaching; faculty website maintenance.</li>
-                      <li>Vice Project Manager for Comparative Study with Budi Luhur University.</li>
-                    </ul>
-                  </div>
+              <div class="resume-item">
+                <h4>Loan Management</h4>
+                <div class="mb-3">
+                  <p class="mb-0">
+                    Streamlined loan lifecycle management — application to
+                    closure.
+                  </p>
+                  <a target="_blank" href="https://mampu.io/loan-management/"
+                    >Learn more</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <div class="row align-items-center">
-                <div class="col-2 text-center">
-                  <img class="img-fluid border border-0" src="assets/img/resume/presuniv.jpeg" alt="Presuniv" />
+        </div>
+      </section>
+      <!-- End Resume Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+          </div>
+
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-frontend">Frontend</li>
+                <li data-filter=".filter-backend">Backend</li>
+                <li data-filter=".filter-mobile">Mobile</li>
+                <li data-filter=".filter-video-game">Video game</li>
+                <li data-filter=".filter-application">Application</li>
+                <li data-filter=".filter-golang">Golang</li>
+              </ul>
+            </div>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- Loan Management -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang"
+            >
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <span class="featured-badge"
+                    ><i class="bx bxs-star"></i> Featured</span
+                  >
+                  <img
+                    src="https://mampu.io/wp-content/uploads/2024/08/Frame-1171276186.png"
+                    class="img-fluid"
+                    alt="Loan Management"
+                    onerror="
+                      handleImageError(
+                        this,
+                        'bg-gradient-default',
+                        'bx-credit-card',
+                      )
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      href="https://mampu.io/loan-management/"
+                      target="_blank"
+                      title="Website"
+                      ><i class="bx bx-world"></i
+                    ></a>
+                  </div>
                 </div>
-                <div class="col-10">
-                  <h4>
-                    Bachelor of Science in Computing, Information Technology
-                  </h4>
-                  <h5>2018 - 2022</h5>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Backend</span>
+                    <span class="portfolio-tag">Golang</span>
+                  </div>
+                  <h3>Loan Management</h3>
                   <p>
-                    <em><strong><a target="_blank" class="text-dark text-decoration-none"
-                          href="https://president.ac.id/">President University</a></strong>, Cikarang, West Java</em>
+                    Our Loan Management Solution is designed to simplify and
+                    streamline every aspect of the loan lifecycle, from
+                    application to closure. Whether you're a lender, servicer,
+                    or borrower, our platform offers comprehensive tools to
+                    manage loans efficiently and securely.
                   </p>
                 </div>
               </div>
-              <p>Cum. GPA: <strong>3.85</strong> out of 4.00</p>
-              <p>
-                Research: CNN-Based Application To Help Students Learn American Sign Language (ASL)
-              </p>
             </div>
-            <h3 class="resume-title">Work Project</h3>
-            <div class="resume-item">
-              <h4>Mobile Banking Koperasi</h4>
-              <div class="mb-3">
-                <p class="mb-0">Seamless and secure Koperasi member finance management.</p>
-                <a target="_blank" href="https://mampu.io/mobile-banking-koperasi/">Learn more</a>
+
+            <!-- Mobile Banking for Rural Bank (BPR) and Cooperation (Koperasi) -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang"
+            >
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <span class="featured-badge"
+                    ><i class="bx bxs-star"></i> Featured</span
+                  >
+                  <img
+                    src="https://mampu.io/wp-content/uploads/2024/08/Frame-1171276182-1.png"
+                    class="img-fluid"
+                    alt="Mobile Banking"
+                    onerror="
+                      handleImageError(
+                        this,
+                        'bg-gradient-default',
+                        'bx-mobile-alt',
+                      )
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      href="https://mampu.io/mobile-banking-bpr/"
+                      target="_blank"
+                      title="Mobile Banking BPR Website"
+                      ><i class="bx bx-world"></i
+                    ></a>
+                    <a
+                      href="https://mampu.io/mobile-banking-koperasi/"
+                      target="_blank"
+                      title="Mobile Banking Koperasi Website"
+                      ><i class="bx bx-world"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Backend</span>
+                    <span class="portfolio-tag">Golang</span>
+                  </div>
+                  <h3>Mobile Banking for Rural Bank &amp; Cooperation</h3>
+                  <p>
+                    Our Mobile Banking Solutions provide a seamless and secure
+                    way to manage your finances anytime, anywhere. With a
+                    user-friendly interface and robust features, you can take
+                    control of your banking needs with ease.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="resume-item">
-              <h4>Mobile Banking BPR</h4>
-              <div class="mb-3">
-                <p class="mb-0">Seamless and secure BPR member finance management.</p>
-                <a target="_blank" href="https://mampu.io/mobile-banking-bpr/">Learn more</a>
+
+            <!-- Golang URL Shortner -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang"
+            >
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/golang-url-shortner.png"
+                    class="img-fluid"
+                    alt="Golang URL Shortner"
+                    onerror="
+                      handleImageError(this, 'bg-gradient-default', 'bx-link')
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/go-url-shortner"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://youtu.be/PCPcFddQ5Dg"
+                      title="YouTube"
+                      ><i class="bx bxl-youtube"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://dev.to/luthfisauqi17/building-a-url-shortener-in-go-592d"
+                      title="Dev.to"
+                      ><i class="bx bxl-dev-to"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Golang</span>
+                    <span class="portfolio-tag">Gin</span>
+                    <span class="portfolio-tag">Backend</span>
+                  </div>
+                  <h3>Golang URL Shortner</h3>
+                  <p>
+                    A simple URL shortener built using Golang and Gin, storing
+                    short URLs in memory using a Go map.
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="resume-item">
-              <h4>Loan Management</h4>
-              <div class="mb-3">
-                <p class="mb-0">Streamlined loan lifecycle management — application to closure.</p>
-                <a target="_blank" href="https://mampu.io/loan-management/">Learn more</a>
+
+            <!-- TaskMate -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/taskmate.jpg"
+                    class="img-fluid"
+                    alt="TaskMate"
+                    onerror="
+                      handleImageError(
+                        this,
+                        'bg-gradient-default',
+                        'bx-list-ul',
+                      )
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/TaskMate"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">React Native</span>
+                    <span class="portfolio-tag">Expo</span>
+                    <span class="portfolio-tag">Mobile</span>
+                  </div>
+                  <h3>TaskMate</h3>
+                  <p>
+                    TaskMate is a React Native to-do list app built with Expo,
+                    allowing users to add, check, and delete tasks easily.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Flate -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item filter-frontend filter-backend"
+            >
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/flate1.png"
+                    class="img-fluid"
+                    alt="Flate"
+                    onerror="
+                      handleImageError(this, 'bg-gradient-default', 'bx-note')
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/Flate"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Python</span>
+                    <span class="portfolio-tag">Flask</span>
+                    <span class="portfolio-tag">SQLite</span>
+                  </div>
+                  <h3>Flate</h3>
+                  <p>
+                    Flate (Flask note) is a web application inspired by Google
+                    Keep from Google. This project was made using Flask
+                    framework (Python3 micro web framework).
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- YETI-SB165 -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/yeti1.png"
+                    class="img-fluid"
+                    alt="YETI-SB165"
+                    onerror="
+                      handleImageError(
+                        this,
+                        'bg-gradient-default',
+                        'bx-cycling',
+                      )
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://luthfisauqi17.github.io/YETI-SB165/"
+                      title="Website"
+                      ><i class="bx bx-world"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/YETI-SB165"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">HTML</span>
+                    <span class="portfolio-tag">CSS</span>
+                    <span class="portfolio-tag">Bootstrap</span>
+                  </div>
+                  <h3>YETI-SB165</h3>
+                  <p>
+                    This website is made using Bootstrap 4, Font Awesome, and
+                    CSS to showcase high-performance mountain biking gear.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ticketing -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-ticketing">
+                    <i class="bx bx-receipt"></i>
+                    <span class="portfolio-placeholder-text">Ticketing</span>
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/Ticketing"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">HTML</span>
+                    <span class="portfolio-tag">JavaScript</span>
+                    <span class="portfolio-tag">PHP</span>
+                    <span class="portfolio-tag">CSS</span>
+                  </div>
+                  <h3>Ticketing</h3>
+                  <p>
+                    Inspired by online airplane ticket booking services, this
+                    website facilitates booking airline tickets with interactive
+                    customer forms.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- WareIT -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-application">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-wareit">
+                    <i class="bx bx-package"></i>
+                    <span class="portfolio-placeholder-text">WareIT</span>
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/WareIT"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Visual Basic .NET</span>
+                    <span class="portfolio-tag">Application</span>
+                  </div>
+                  <h3>WareIT</h3>
+                  <p>
+                    Warehouse management system created using the Visual Basic
+                    programming language to track stock levels, orders, and
+                    sales.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- MoneyRec -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-application">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-moneyrec">
+                    <i class="bx bx-wallet"></i>
+                    <span class="portfolio-placeholder-text">MoneyRec</span>
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/MoneyRec"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Java</span>
+                    <span class="portfolio-tag">Application</span>
+                  </div>
+                  <h3>MoneyRec</h3>
+                  <p>
+                    MoneyRec is a desktop application program that calculates
+                    and details your spending and also your income.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- SNAKE-2D -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-snake">
+                    <i class="bx bx-joystick"></i>
+                    <span class="portfolio-placeholder-text">SNAKE-2D</span>
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/SNAKE-2D"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">C++</span>
+                    <span class="portfolio-tag">Game Development</span>
+                  </div>
+                  <h3>SNAKE-2D</h3>
+                  <p>
+                    A classic 2D Snake game implementation built using the C++
+                    programming language.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Meteoraid -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/meteoraid1.png"
+                    class="img-fluid"
+                    alt="Meteoraid"
+                    onerror="
+                      handleImageError(this, 'bg-gradient-default', 'bx-rocket')
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://github.com/luthfisauqi17/Meteoraid"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Python</span>
+                    <span class="portfolio-tag">C</span>
+                    <span class="portfolio-tag">Pygame</span>
+                  </div>
+                  <h3>Meteoraid</h3>
+                  <p>
+                    Meteoraid is a game created using Pygame library. Players
+                    must shoot meteoroids to score points while avoiding
+                    collisions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Jendela Kita -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/jendelakita1.png"
+                    class="img-fluid"
+                    alt="Jendela Kita"
+                    onerror="
+                      handleImageError(
+                        this,
+                        'bg-gradient-default',
+                        'bx-window-open',
+                      )
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://jendelakita.github.io"
+                      title="Website"
+                      ><i class="bx bx-world"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/jendelakita/jendelakita.github.io"
+                      title="Github"
+                      ><i class="bx bxl-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">JavaScript</span>
+                    <span class="portfolio-tag">HTML</span>
+                    <span class="portfolio-tag">CSS</span>
+                  </div>
+                  <h3>Jendela Kita</h3>
+                  <p>
+                    A social initiative project website made by President
+                    University students, providing insights and info on
+                    contemporary social questions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wizardo Saves the Earth -->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
+              <div class="portfolio-card">
+                <div class="portfolio-wrap">
+                  <img
+                    src="assets/img/portfolio/wste1.png"
+                    class="img-fluid"
+                    alt="Wizardo Saves the Earth"
+                    onerror="
+                      handleImageError(this, 'bg-gradient-default', 'bx-brain')
+                    "
+                  />
+                  <div class="portfolio-links d-none">
+                    <a
+                      target="_blank"
+                      href="https://drive.google.com/file/u/1/d/1BhCt_jHKoyHKm6Hv2RAlThcbGV_M2hQK/view?usp=drivesdk"
+                      title="Video Demo"
+                      ><i class="bx bxs-movie-play"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Python</span>
+                    <span class="portfolio-tag">Tensorflow</span>
+                    <span class="portfolio-tag">OpenCV</span>
+                    <span class="portfolio-tag">Keras</span>
+                  </div>
+                  <h3>Wizardo Saves the Earth</h3>
+                  <p>
+                    ASL helper convolutional neural network-based application to
+                    recognize sign language hand gestures.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- End Portfolio Section -->
+
+      <!-- ======= Blog Section ======= -->
+      <section id="blog" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Articles &amp; Blogs</h2>
+            <p>
+              I frequently write about backend engineering, system architecture,
+              and best practices.
+            </p>
+          </div>
+
+          <div
+            class="row portfolio-container"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div
+                class="portfolio-card blog-card"
+                data-blog-views="1.2K"
+                data-blog-likes="340"
+                data-blog-read="5 min read"
+              >
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-default">
+                    <i class="bx bx-pen"></i>
+                    <span class="portfolio-placeholder-text"
+                      >Medium Article</span
+                    >
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      href="https://medium.com/stackademic/implementing-grpc-in-golang-a-practical-guide-for-backend-engineers-7853ab7b12e0"
+                      target="_blank"
+                      title="Read on Medium"
+                      ><i class="bx bxl-medium"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Golang</span>
+                    <span class="portfolio-tag">Grpc</span>
+                    <span class="portfolio-tag">Backend Development</span>
+                    <span class="portfolio-tag">Microservices</span>
+                    <span class="portfolio-tag">Software Engineering</span>
+                  </div>
+                  <h3>
+                    Implementing gRPC in Golang: A Practical Guide for Backend
+                    Engineers
+                  </h3>
+                  <p>
+                    Microservices have become the default architecture for
+                    modern backend systems. As systems grow, efficient and
+                    reliable communication between services becomes increasingly
+                    important ...
+                  </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div
+                class="portfolio-card blog-card"
+                data-blog-views="850"
+                data-blog-likes="124"
+                data-blog-read="3 min read"
+              >
+                <div class="portfolio-wrap">
+                  <div class="portfolio-placeholder bg-gradient-ticketing">
+                    <i class="bx bx-code"></i>
+                    <span class="portfolio-placeholder-text"
+                      >Dev.to Article</span
+                    >
+                  </div>
+                  <div class="portfolio-links d-none">
+                    <a
+                      href="https://dev.to/luthfisauqi17"
+                      target="_blank"
+                      title="Read on Dev.to"
+                      ><i class="bx bxl-dev-to"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="portfolio-info-body">
+                  <div class="portfolio-tags">
+                    <span class="portfolio-tag">Golang</span>
+                    <span class="portfolio-tag">Tutorial</span>
+                  </div>
+                  <h3>Golang Backend Tutorial</h3>
+                  <p>
+                    Tutorials, practical guides, and code snippets focusing on
+                    Golang, Java, and modern development tools.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Blog Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <p>Have a project in mind? Let's build something great together.</p>
+          </div>
+
+          <div class="row g-4" data-aos="fade-up">
+            <div class="col-lg-4">
+              <div class="info">
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email</h4>
+                  <p>luthfisauqi17@gmail.com</p>
+                </div>
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location</h4>
+                  <p>Jakarta, Indonesia</p>
+                </div>
+                <div class="social-links">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/luthfi-syauqi-magesta/"
+                    class="linkedin"
+                    ><i class="bx bxl-linkedin"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://github.com/luthfisauqi17"
+                    class="github"
+                    ><i class="bx bxl-github"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://dev.to/luthfisauqi17"
+                    class="devto"
+                    ><i class="bx bxl-dev-to"></i
+                  ></a>
+                  <a
+                    target="_blank"
+                    href="https://medium.com/@luthfisauqi17_68455"
+                    class="medium"
+                    ><i class="bx bxl-medium"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="cta-banner">
+                <h3>Let's Build Something Great Together</h3>
+                <p>
+                  I'm open to discussing new opportunities, collaborations, or
+                  tech talks. Whether you need API development, system
+                  integration, microservices architecture, or database
+                  optimization — I'd love to connect.
+                </p>
+                <div class="cta-actions">
+                  <a
+                    href="mailto:luthfisauqi17@gmail.com"
+                    class="btn-cta-primary"
+                    ><i class="bx bx-envelope"></i> Get in Touch</a
+                  >
+                  <a
+                    href="https://www.linkedin.com/in/luthfi-syauqi-magesta/"
+                    target="_blank"
+                    class="btn-cta-outline"
+                    ><i class="bx bxl-linkedin"></i> Connect on LinkedIn</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container" style="font-size: 11px; opacity: 0.6">
+        <div class="copyright">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          <strong><span>Luthfi Syauqi</span></strong
+          >. All rights reserved.
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
-    </section>
-    <!-- End Resume Section -->
+    </footer>
+    <!-- End  Footer -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Portfolio</h2>
-        </div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-frontend">Frontend</li>
-              <li data-filter=".filter-backend">Backend</li>
-              <li data-filter=".filter-mobile">Mobile</li>
-              <li data-filter=".filter-video-game">Video game</li>
-              <li data-filter=".filter-application">Application</li>
-              <li data-filter=".filter-golang">Golang</li>
-            </ul>
-          </div>
-        </div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          <!-- Loan Management -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <span class="featured-badge"><i class="bx bxs-star"></i> Featured</span>
-                <img src="https://mampu.io/wp-content/uploads/2024/08/Frame-1171276186.png" class="img-fluid" alt="Loan Management" onerror="handleImageError(this, 'bg-gradient-default', 'bx-credit-card')" />
-                <div class="portfolio-links d-none">
-                  <a href="https://mampu.io/loan-management/" target="_blank" title="Website"><i class="bx bx-world"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Backend</span>
-                  <span class="portfolio-tag">Golang</span>
-                </div>
-                <h3>Loan Management</h3>
-                <p>
-                  Our Loan Management Solution is designed to simplify and streamline every aspect of the loan lifecycle,
-                  from application to closure. Whether you're a lender, servicer, or borrower, our platform offers
-                  comprehensive tools to manage loans efficiently and securely.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-          <!-- Mobile Banking for Rural Bank (BPR) and Cooperation (Koperasi) -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <span class="featured-badge"><i class="bx bxs-star"></i> Featured</span>
-                <img src="https://mampu.io/wp-content/uploads/2024/08/Frame-1171276182-1.png" class="img-fluid" alt="Mobile Banking" onerror="handleImageError(this, 'bg-gradient-default', 'bx-mobile-alt')" />
-                <div class="portfolio-links d-none">
-                  <a href="https://mampu.io/mobile-banking-bpr/" target="_blank" title="Mobile Banking BPR Website"><i class="bx bx-world"></i></a>
-                  <a href="https://mampu.io/mobile-banking-koperasi/" target="_blank" title="Mobile Banking Koperasi Website"><i class="bx bx-world"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Backend</span>
-                  <span class="portfolio-tag">Golang</span>
-                </div>
-                <h3>Mobile Banking for Rural Bank &amp; Cooperation</h3>
-                <p>
-                  Our Mobile Banking Solutions provide a seamless and secure way to manage your finances anytime,
-                  anywhere. With a user-friendly interface and robust features, you can take control of your banking needs with ease.
-                </p>
-              </div>
-            </div>
-          </div>
+    <!-- Badge Modal JavaScript -->
+    <script>
+      function handleImageError(img, gradientClass, iconClass) {
+        const wrap = img.parentElement;
+        if (!wrap) return;
 
-          <!-- Golang URL Shortner -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-backend filter-golang">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/golang-url-shortner.png" class="img-fluid" alt="Golang URL Shortner" onerror="handleImageError(this, 'bg-gradient-default', 'bx-link')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/go-url-shortner" title="Github"><i class="bx bxl-github"></i></a>
-                  <a target="_blank" href="https://youtu.be/PCPcFddQ5Dg" title="YouTube"><i class="bx bxl-youtube"></i></a>
-                  <a target="_blank" href="https://dev.to/luthfisauqi17/building-a-url-shortener-in-go-592d" title="Dev.to"><i class="bx bxl-dev-to"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Golang</span>
-                  <span class="portfolio-tag">Gin</span>
-                  <span class="portfolio-tag">Backend</span>
-                </div>
-                <h3>Golang URL Shortner</h3>
-                <p>
-                  A simple URL shortener built using Golang and Gin, storing short URLs in memory using a Go map.
-                </p>
-              </div>
-            </div>
-          </div>
+        const placeholder = document.createElement("div");
+        placeholder.className = `portfolio-placeholder ${gradientClass || "bg-gradient-default"}`;
 
-          <!-- TaskMate -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-mobile">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/taskmate.jpg" class="img-fluid" alt="TaskMate" onerror="handleImageError(this, 'bg-gradient-default', 'bx-list-ul')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/TaskMate" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">React Native</span>
-                  <span class="portfolio-tag">Expo</span>
-                  <span class="portfolio-tag">Mobile</span>
-                </div>
-                <h3>TaskMate</h3>
-                <p>
-                  TaskMate is a React Native to-do list app built with Expo, allowing users to add, check, and delete tasks easily.
-                </p>
-              </div>
-            </div>
-          </div>
+        const icon = document.createElement("i");
+        icon.className = `bx ${iconClass || "bx-code-alt"}`;
 
-          <!-- Flate -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend filter-backend">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/flate1.png" class="img-fluid" alt="Flate" onerror="handleImageError(this, 'bg-gradient-default', 'bx-note')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/Flate" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Python</span>
-                  <span class="portfolio-tag">Flask</span>
-                  <span class="portfolio-tag">SQLite</span>
-                </div>
-                <h3>Flate</h3>
-                <p>
-                  Flate (Flask note) is a web application inspired by Google Keep from Google. This project was made using Flask framework (Python3 micro web framework).
-                </p>
-              </div>
-            </div>
-          </div>
+        const text = document.createElement("span");
+        text.className = "portfolio-placeholder-text";
+        text.textContent = img.alt || "Project";
 
-          <!-- YETI-SB165 -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/yeti1.png" class="img-fluid" alt="YETI-SB165" onerror="handleImageError(this, 'bg-gradient-default', 'bx-cycling')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://luthfisauqi17.github.io/YETI-SB165/" title="Website"><i class="bx bx-world"></i></a>
-                  <a target="_blank" href="https://github.com/luthfisauqi17/YETI-SB165" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                  <span class="portfolio-tag">Bootstrap</span>
-                </div>
-                <h3>YETI-SB165</h3>
-                <p>
-                  This website is made using Bootstrap 4, Font Awesome, and CSS to showcase high-performance mountain biking gear.
-                </p>
-              </div>
-            </div>
-          </div>
+        placeholder.appendChild(icon);
+        placeholder.appendChild(text);
 
-          <!-- Ticketing -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-ticketing">
-                  <i class="bx bx-receipt"></i>
-                  <span class="portfolio-placeholder-text">Ticketing</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/Ticketing" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">JavaScript</span>
-                  <span class="portfolio-tag">PHP</span>
-                  <span class="portfolio-tag">CSS</span>
-                </div>
-                <h3>Ticketing</h3>
-                <p>
-                  Inspired by online airplane ticket booking services, this website facilitates booking airline tickets with interactive customer forms.
-                </p>
-              </div>
-            </div>
-          </div>
+        wrap.insertBefore(placeholder, img);
+        img.remove();
 
-          <!-- WareIT -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-application">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-wareit">
-                  <i class="bx bx-package"></i>
-                  <span class="portfolio-placeholder-text">WareIT</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/WareIT" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Visual Basic .NET</span>
-                  <span class="portfolio-tag">Application</span>
-                </div>
-                <h3>WareIT</h3>
-                <p>
-                  Warehouse management system created using the Visual Basic programming language to track stock levels, orders, and sales.
-                </p>
-              </div>
-            </div>
-          </div>
+        window.dispatchEvent(new Event("resize"));
+      }
 
-          <!-- MoneyRec -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-application">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-moneyrec">
-                  <i class="bx bx-wallet"></i>
-                  <span class="portfolio-placeholder-text">MoneyRec</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/MoneyRec" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Java</span>
-                  <span class="portfolio-tag">Application</span>
-                </div>
-                <h3>MoneyRec</h3>
-                <p>
-                  MoneyRec is a desktop application program that calculates and details your spending and also your income.
-                </p>
-              </div>
-            </div>
-          </div>
+      document.addEventListener("DOMContentLoaded", function () {
+        const badgeModal = document.getElementById("badgeModal");
+        const modalBadgeImage = document.getElementById("modalBadgeImage");
+        const modalBadgeTitle = document.getElementById("modalBadgeTitle");
+        const modalBadgeIssuer = document.getElementById("modalBadgeIssuer");
+        const modalBadgeDate = document.getElementById("modalBadgeDate");
+        const modalBadgeUrl = document.getElementById("modalBadgeUrl");
 
-          <!-- SNAKE-2D -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-snake">
-                  <i class="bx bx-joystick"></i>
-                  <span class="portfolio-placeholder-text">SNAKE-2D</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/SNAKE-2D" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">C++</span>
-                  <span class="portfolio-tag">Game Development</span>
-                </div>
-                <h3>SNAKE-2D</h3>
-                <p>
-                  A classic 2D Snake game implementation built using the C++ programming language.
-                </p>
-              </div>
-            </div>
-          </div>
+        // Handle badge card clicks
+        document
+          .querySelectorAll(".badge-image-container")
+          .forEach(function (container) {
+            container.addEventListener("click", function () {
+              const title = this.getAttribute("data-badge-title");
+              const issuer = this.getAttribute("data-badge-issuer");
+              const date = this.getAttribute("data-badge-date");
+              const image = this.getAttribute("data-badge-image");
+              const url = this.getAttribute("data-badge-url");
 
-          <!-- Meteoraid -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/meteoraid1.png" class="img-fluid" alt="Meteoraid" onerror="handleImageError(this, 'bg-gradient-default', 'bx-rocket')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://github.com/luthfisauqi17/Meteoraid" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Python</span>
-                  <span class="portfolio-tag">C</span>
-                  <span class="portfolio-tag">Pygame</span>
-                </div>
-                <h3>Meteoraid</h3>
-                <p>
-                  Meteoraid is a game created using Pygame library. Players must shoot meteoroids to score points while avoiding collisions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Jendela Kita -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-frontend">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/jendelakita1.png" class="img-fluid" alt="Jendela Kita" onerror="handleImageError(this, 'bg-gradient-default', 'bx-window-open')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://jendelakita.github.io" title="Website"><i class="bx bx-world"></i></a>
-                  <a target="_blank" href="https://github.com/jendelakita/jendelakita.github.io" title="Github"><i class="bx bxl-github"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">JavaScript</span>
-                  <span class="portfolio-tag">HTML</span>
-                  <span class="portfolio-tag">CSS</span>
-                </div>
-                <h3>Jendela Kita</h3>
-                <p>
-                  A social initiative project website made by President University students, providing insights and info on contemporary social questions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Wizardo Saves the Earth -->
-          <div class="col-lg-4 col-md-6 portfolio-item filter-video-game">
-            <div class="portfolio-card">
-              <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/wste1.png" class="img-fluid" alt="Wizardo Saves the Earth" onerror="handleImageError(this, 'bg-gradient-default', 'bx-brain')" />
-                <div class="portfolio-links d-none">
-                  <a target="_blank" href="https://drive.google.com/file/u/1/d/1BhCt_jHKoyHKm6Hv2RAlThcbGV_M2hQK/view?usp=drivesdk" title="Video Demo"><i class="bx bxs-movie-play"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Python</span>
-                  <span class="portfolio-tag">Tensorflow</span>
-                  <span class="portfolio-tag">OpenCV</span>
-                  <span class="portfolio-tag">Keras</span>
-                </div>
-                <h3>Wizardo Saves the Earth</h3>
-                <p>
-                  ASL helper convolutional neural network-based application to recognize sign language hand gestures.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-    </section>
-    <!-- End Portfolio Section -->
-
-    <!-- ======= Blog Section ======= -->
-    <section id="blog" class="portfolio section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Articles &amp; Blogs</h2>
-          <p>I frequently write about backend engineering, system architecture, and best practices.</p>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-card blog-card" data-blog-views="1.2K" data-blog-likes="340" data-blog-read="5 min read">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-default">
-                  <i class="bx bx-pen"></i>
-                  <span class="portfolio-placeholder-text">Medium Article</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a href="https://medium.com/@luthfisauqi17_68455" target="_blank" title="Read on Medium"><i class="bx bxl-medium"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">System Design</span>
-                  <span class="portfolio-tag">Medium</span>
-                </div>
-                <h3>Building Scalable FinTech Solutions</h3>
-                <p>
-                  Deep dive into backend architecture, system design, and my experiences scaling financial applications.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item">
-            <div class="portfolio-card blog-card" data-blog-views="850" data-blog-likes="124" data-blog-read="3 min read">
-              <div class="portfolio-wrap">
-                <div class="portfolio-placeholder bg-gradient-ticketing">
-                  <i class="bx bx-code"></i>
-                  <span class="portfolio-placeholder-text">Dev.to Article</span>
-                </div>
-                <div class="portfolio-links d-none">
-                  <a href="https://dev.to/luthfisauqi17" target="_blank" title="Read on Dev.to"><i class="bx bxl-dev-to"></i></a>
-                </div>
-              </div>
-              <div class="portfolio-info-body">
-                <div class="portfolio-tags">
-                  <span class="portfolio-tag">Golang</span>
-                  <span class="portfolio-tag">Tutorial</span>
-                </div>
-                <h3>Golang Backend Tutorial</h3>
-                <p>
-                  Tutorials, practical guides, and code snippets focusing on Golang, Java, and modern development tools.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-    <!-- End Blog Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Have a project in mind? Let's build something great together.</p>
-        </div>
-
-        <div class="row g-4" data-aos="fade-up">
-          <div class="col-lg-4">
-            <div class="info">
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email</h4>
-                <p>luthfisauqi17@gmail.com</p>
-              </div>
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location</h4>
-                <p>Jakarta, Indonesia</p>
-              </div>
-              <div class="social-links">
-                <a target="_blank" href="https://www.linkedin.com/in/luthfi-syauqi-magesta/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a target="_blank" href="https://github.com/luthfisauqi17" class="github"><i class="bx bxl-github"></i></a>
-                <a target="_blank" href="https://dev.to/luthfisauqi17" class="devto"><i class="bx bxl-dev-to"></i></a>
-                <a target="_blank" href="https://medium.com/@luthfisauqi17_68455" class="medium"><i class="bx bxl-medium"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="cta-banner">
-              <h3>Let's Build Something Great Together</h3>
-              <p>I'm open to discussing new opportunities, collaborations, or tech talks. Whether you need API development, system integration, microservices architecture, or database optimization — I'd love to connect.</p>
-              <div class="cta-actions">
-                <a href="mailto:luthfisauqi17@gmail.com" class="btn-cta-primary"><i class="bx bx-envelope"></i> Get in Touch</a>
-                <a href="https://www.linkedin.com/in/luthfi-syauqi-magesta/" target="_blank" class="btn-cta-outline"><i class="bx bxl-linkedin"></i> Connect on LinkedIn</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
-  </main>
-  <!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container" style="font-size: 11px; opacity: 0.6;">
-      <div class="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> <strong><span>Luthfi Syauqi</span></strong>. All rights reserved.
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer>
-  <!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-  <!-- Badge Modal JavaScript -->
-  <script>
-    function handleImageError(img, gradientClass, iconClass) {
-      const wrap = img.parentElement;
-      if (!wrap) return;
-      
-      const placeholder = document.createElement('div');
-      placeholder.className = `portfolio-placeholder ${gradientClass || 'bg-gradient-default'}`;
-      
-      const icon = document.createElement('i');
-      icon.className = `bx ${iconClass || 'bx-code-alt'}`;
-      
-      const text = document.createElement('span');
-      text.className = 'portfolio-placeholder-text';
-      text.textContent = img.alt || 'Project';
-      
-      placeholder.appendChild(icon);
-      placeholder.appendChild(text);
-      
-      wrap.insertBefore(placeholder, img);
-      img.remove();
-      
-      window.dispatchEvent(new Event('resize'));
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const badgeModal = document.getElementById('badgeModal');
-      const modalBadgeImage = document.getElementById('modalBadgeImage');
-      const modalBadgeTitle = document.getElementById('modalBadgeTitle');
-      const modalBadgeIssuer = document.getElementById('modalBadgeIssuer');
-      const modalBadgeDate = document.getElementById('modalBadgeDate');
-      const modalBadgeUrl = document.getElementById('modalBadgeUrl');
-
-      // Handle badge card clicks
-      document.querySelectorAll('.badge-image-container').forEach(function (container) {
-        container.addEventListener('click', function () {
-          const title = this.getAttribute('data-badge-title');
-          const issuer = this.getAttribute('data-badge-issuer');
-          const date = this.getAttribute('data-badge-date');
-          const image = this.getAttribute('data-badge-image');
-          const url = this.getAttribute('data-badge-url');
-
-          modalBadgeTitle.textContent = title;
-          modalBadgeIssuer.textContent = issuer;
-          modalBadgeDate.textContent = date;
-          modalBadgeImage.src = image;
-          modalBadgeImage.alt = title;
-          modalBadgeUrl.href = url;
-        });
+              modalBadgeTitle.textContent = title;
+              modalBadgeIssuer.textContent = issuer;
+              modalBadgeDate.textContent = date;
+              modalBadgeImage.src = image;
+              modalBadgeImage.alt = title;
+              modalBadgeUrl.href = url;
+            });
+          });
       });
-    });
-  </script>
-  <!-- Portfolio Detail Modal -->
-  <div class="modal fade" id="portfolioDetailModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg" style="border-radius: 12px; overflow: hidden;">
-        <div class="modal-header border-0 pb-0" style="position: absolute; right: 0; z-index: 10;">
-          <button type="button" class="btn-close bg-white rounded-circle p-2 m-2 shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-0">
-          <div class="row g-0">
-            <div id="portfolioModalLeftCol" class="col-md-6 bg-light d-flex align-items-center justify-content-center p-4">
-              <img id="modalPortfolioImage" src="" class="img-fluid rounded shadow-sm" alt="Portfolio Image">
-            </div>
-            <div class="col-md-6 p-4 p-md-5 d-flex flex-column justify-content-center">
-              <div id="modalPortfolioTags" class="portfolio-tags mb-3"></div>
-              <h3 id="modalPortfolioTitle" class="fw-bold mb-3" style="color: #173b6c;">Title</h3>
-              <p id="modalPortfolioDesc" class="text-muted mb-4">Description</p>
-              <div id="modalPortfolioLinks" class="d-flex flex-wrap gap-2"></div>
+    </script>
+    <!-- Portfolio Detail Modal -->
+    <div
+      class="modal fade"
+      id="portfolioDetailModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div
+          class="modal-content border-0 shadow-lg"
+          style="border-radius: 12px; overflow: hidden"
+        >
+          <div
+            class="modal-header border-0 pb-0"
+            style="position: absolute; right: 0; z-index: 10"
+          >
+            <button
+              type="button"
+              class="btn-close bg-white rounded-circle p-2 m-2 shadow-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="row g-0">
+              <div
+                id="portfolioModalLeftCol"
+                class="col-md-6 bg-light d-flex align-items-center justify-content-center p-4"
+              >
+                <img
+                  id="modalPortfolioImage"
+                  src=""
+                  class="img-fluid rounded shadow-sm"
+                  alt="Portfolio Image"
+                />
+              </div>
+              <div
+                class="col-md-6 p-4 p-md-5 d-flex flex-column justify-content-center"
+              >
+                <div id="modalPortfolioTags" class="portfolio-tags mb-3"></div>
+                <h3
+                  id="modalPortfolioTitle"
+                  class="fw-bold mb-3"
+                  style="color: #173b6c"
+                >
+                  Title
+                </h3>
+                <p id="modalPortfolioDesc" class="text-muted mb-4">
+                  Description
+                </p>
+                <div
+                  id="modalPortfolioLinks"
+                  class="d-flex flex-wrap gap-2"
+                ></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    // Portfolio Modal Logic
-    document.addEventListener('DOMContentLoaded', function () {
-      const portfolioModalEl = document.getElementById('portfolioDetailModal');
-      if(portfolioModalEl) {
-        const portfolioModal = new bootstrap.Modal(portfolioModalEl);
-        const modalTitle = document.getElementById('modalPortfolioTitle');
-        const modalDesc = document.getElementById('modalPortfolioDesc');
-        const modalTags = document.getElementById('modalPortfolioTags');
-        const modalLinks = document.getElementById('modalPortfolioLinks');
+    <script>
+      // Portfolio Modal Logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const portfolioModalEl = document.getElementById(
+          "portfolioDetailModal",
+        );
+        if (portfolioModalEl) {
+          const portfolioModal = new bootstrap.Modal(portfolioModalEl);
+          const modalTitle = document.getElementById("modalPortfolioTitle");
+          const modalDesc = document.getElementById("modalPortfolioDesc");
+          const modalTags = document.getElementById("modalPortfolioTags");
+          const modalLinks = document.getElementById("modalPortfolioLinks");
 
-        document.querySelectorAll('#portfolio .portfolio-card').forEach(card => {
-          card.style.cursor = 'pointer';
-          card.addEventListener('click', function(e) {
-            // Prevent modal from opening if a link or badge was clicked directly
-            if(e.target.closest('a') || e.target.closest('.featured-badge')) return;
+          document
+            .querySelectorAll("#portfolio .portfolio-card")
+            .forEach((card) => {
+              card.style.cursor = "pointer";
+              card.addEventListener("click", function (e) {
+                // Prevent modal from opening if a link or badge was clicked directly
+                if (
+                  e.target.closest("a") ||
+                  e.target.closest(".featured-badge")
+                )
+                  return;
 
-            const title = card.querySelector('h3').textContent;
-            const desc = card.querySelector('p').textContent;
-            const imgEl = card.querySelector('img');
-            const placeholderEl = card.querySelector('.portfolio-placeholder');
-            
-            modalTitle.textContent = title;
-            modalDesc.textContent = desc;
-            
-            const leftCol = document.getElementById('portfolioModalLeftCol');
-            if (imgEl) {
-              leftCol.innerHTML = '<img src="' + imgEl.src + '" class="img-fluid rounded shadow-sm" alt="' + title + '">';
-            } else if (placeholderEl) {
-              const clone = placeholderEl.cloneNode(true);
-              clone.style.width = '100%';
-              clone.style.minHeight = '250px';
-              clone.style.borderRadius = '8px';
-              leftCol.innerHTML = '';
-              leftCol.appendChild(clone);
-            }
+                const title = card.querySelector("h3").textContent;
+                const desc = card.querySelector("p").textContent;
+                const imgEl = card.querySelector("img");
+                const placeholderEl = card.querySelector(
+                  ".portfolio-placeholder",
+                );
 
-            // Copy tags
-            modalTags.innerHTML = '';
-            card.querySelectorAll('.portfolio-tag').forEach(tag => {
-              const span = document.createElement('span');
-              span.className = 'portfolio-tag';
-              span.textContent = tag.textContent;
-              modalTags.appendChild(span);
+                modalTitle.textContent = title;
+                modalDesc.textContent = desc;
+
+                const leftCol = document.getElementById(
+                  "portfolioModalLeftCol",
+                );
+                if (imgEl) {
+                  leftCol.innerHTML =
+                    '<img src="' +
+                    imgEl.src +
+                    '" class="img-fluid rounded shadow-sm" alt="' +
+                    title +
+                    '">';
+                } else if (placeholderEl) {
+                  const clone = placeholderEl.cloneNode(true);
+                  clone.style.width = "100%";
+                  clone.style.minHeight = "250px";
+                  clone.style.borderRadius = "8px";
+                  leftCol.innerHTML = "";
+                  leftCol.appendChild(clone);
+                }
+
+                // Copy tags
+                modalTags.innerHTML = "";
+                card.querySelectorAll(".portfolio-tag").forEach((tag) => {
+                  const span = document.createElement("span");
+                  span.className = "portfolio-tag";
+                  span.textContent = tag.textContent;
+                  modalTags.appendChild(span);
+                });
+
+                // Copy links
+                modalLinks.innerHTML = "";
+                card.querySelectorAll(".portfolio-links a").forEach((link) => {
+                  const a = document.createElement("a");
+                  a.href = link.href;
+                  a.target = "_blank";
+                  a.className =
+                    "btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2 rounded-pill px-3";
+                  a.innerHTML =
+                    link.innerHTML +
+                    ' <span style="font-size: 12px;">' +
+                    (link.title || "Link") +
+                    "</span>";
+                  modalLinks.appendChild(a);
+                });
+
+                portfolioModal.show();
+              });
             });
+        }
+      });
 
-            // Copy links
-            modalLinks.innerHTML = '';
-            card.querySelectorAll('.portfolio-links a').forEach(link => {
-              const a = document.createElement('a');
-              a.href = link.href;
-              a.target = '_blank';
-              a.className = 'btn btn-outline-primary btn-sm d-inline-flex align-items-center gap-2 rounded-pill px-3';
-              a.innerHTML = link.innerHTML + ' <span style="font-size: 12px;">' + (link.title || 'Link') + '</span>';
-              modalLinks.appendChild(a);
+      // Blog Modal Logic
+      document.addEventListener("DOMContentLoaded", function () {
+        const blogModalEl = document.getElementById("blogDetailModal");
+        if (blogModalEl) {
+          const blogModal = new bootstrap.Modal(blogModalEl);
+          const modalTitle = document.getElementById("modalBlogTitle");
+          const modalDesc = document.getElementById("modalBlogDesc");
+          const modalIcon = document.getElementById("modalBlogIcon");
+          const modalTags = document.getElementById("modalBlogTags");
+          const modalLinks = document.getElementById("modalBlogLinks");
+          const modalViews = document.getElementById("modalBlogViews");
+          const modalLikes = document.getElementById("modalBlogLikes");
+          const modalRead = document.getElementById("modalBlogRead");
+
+          document.querySelectorAll("#blog .portfolio-card").forEach((card) => {
+            card.style.cursor = "pointer";
+            card.addEventListener("click", function (e) {
+              // Prevent modal from opening if a link was clicked directly
+              if (e.target.closest("a")) return;
+
+              const title = card.querySelector("h3").textContent;
+              const desc = card.querySelector("p").textContent;
+              const iconClass = card.querySelector(".portfolio-placeholder i")
+                ? card.querySelector(".portfolio-placeholder i").className
+                : "bx bx-pen";
+
+              modalTitle.textContent = title;
+              modalDesc.textContent = desc;
+              modalIcon.className = iconClass + " display-1 text-primary mb-3";
+
+              // Set metrics
+              modalViews.textContent =
+                card.getAttribute("data-blog-views") || "1K";
+              modalLikes.textContent =
+                card.getAttribute("data-blog-likes") || "100";
+              modalRead.textContent =
+                card.getAttribute("data-blog-read") || "5 min read";
+
+              // Copy tags
+              modalTags.innerHTML = "";
+              card.querySelectorAll(".portfolio-tag").forEach((tag) => {
+                const span = document.createElement("span");
+                span.className = "portfolio-tag";
+                span.textContent = tag.textContent;
+                modalTags.appendChild(span);
+              });
+
+              // Copy links
+              modalLinks.innerHTML = "";
+              card.querySelectorAll(".portfolio-links a").forEach((link) => {
+                const a = document.createElement("a");
+                a.href = link.href;
+                a.target = "_blank";
+                a.className =
+                  "btn btn-primary d-inline-flex align-items-center gap-2 rounded-pill px-4 py-2 mt-3";
+                a.innerHTML =
+                  link.innerHTML +
+                  " <span>" +
+                  (link.title || "Read Article") +
+                  "</span>";
+                modalLinks.appendChild(a);
+              });
+
+              blogModal.show();
             });
-
-            portfolioModal.show();
           });
-        });
-      }
-    });
+        }
+      });
+    </script>
 
-    // Blog Modal Logic
-    document.addEventListener('DOMContentLoaded', function () {
-      const blogModalEl = document.getElementById('blogDetailModal');
-      if(blogModalEl) {
-        const blogModal = new bootstrap.Modal(blogModalEl);
-        const modalTitle = document.getElementById('modalBlogTitle');
-        const modalDesc = document.getElementById('modalBlogDesc');
-        const modalIcon = document.getElementById('modalBlogIcon');
-        const modalTags = document.getElementById('modalBlogTags');
-        const modalLinks = document.getElementById('modalBlogLinks');
-        const modalViews = document.getElementById('modalBlogViews');
-        const modalLikes = document.getElementById('modalBlogLikes');
-        const modalRead = document.getElementById('modalBlogRead');
-
-        document.querySelectorAll('#blog .portfolio-card').forEach(card => {
-          card.style.cursor = 'pointer';
-          card.addEventListener('click', function(e) {
-            // Prevent modal from opening if a link was clicked directly
-            if(e.target.closest('a')) return;
-
-            const title = card.querySelector('h3').textContent;
-            const desc = card.querySelector('p').textContent;
-            const iconClass = card.querySelector('.portfolio-placeholder i') ? card.querySelector('.portfolio-placeholder i').className : 'bx bx-pen';
-            
-            modalTitle.textContent = title;
-            modalDesc.textContent = desc;
-            modalIcon.className = iconClass + ' display-1 text-primary mb-3';
-
-            // Set metrics
-            modalViews.textContent = card.getAttribute('data-blog-views') || '1K';
-            modalLikes.textContent = card.getAttribute('data-blog-likes') || '100';
-            modalRead.textContent = card.getAttribute('data-blog-read') || '5 min read';
-
-            // Copy tags
-            modalTags.innerHTML = '';
-            card.querySelectorAll('.portfolio-tag').forEach(tag => {
-              const span = document.createElement('span');
-              span.className = 'portfolio-tag';
-              span.textContent = tag.textContent;
-              modalTags.appendChild(span);
-            });
-
-            // Copy links
-            modalLinks.innerHTML = '';
-            card.querySelectorAll('.portfolio-links a').forEach(link => {
-              const a = document.createElement('a');
-              a.href = link.href;
-              a.target = '_blank';
-              a.className = 'btn btn-primary d-inline-flex align-items-center gap-2 rounded-pill px-4 py-2 mt-3';
-              a.innerHTML = link.innerHTML + ' <span>' + (link.title || 'Read Article') + '</span>';
-              modalLinks.appendChild(a);
-            });
-
-            blogModal.show();
-          });
-        });
-      }
-    });
-  </script>
-
-  <!-- Blog Detail Modal -->
-  <div class="modal fade" id="blogDetailModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg" style="border-radius: 12px; overflow: hidden;">
-        <div class="modal-header border-0 pb-0" style="position: absolute; right: 0; z-index: 10;">
-          <button type="button" class="btn-close bg-light rounded-circle p-2 m-2 shadow-sm" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body p-5 text-center">
-          <i id="modalBlogIcon" class="bx bx-pen display-1 text-primary mb-3"></i>
-          <div id="modalBlogTags" class="portfolio-tags justify-content-center mb-3"></div>
-          <h3 id="modalBlogTitle" class="fw-bold mb-3" style="color: #173b6c;">Title</h3>
-          <p id="modalBlogDesc" class="text-muted mb-4">Description</p>
-          
-          <div class="d-flex justify-content-center gap-4 mb-4 pt-3 border-top">
-            <div class="text-center">
-              <i class="bx bx-show fs-4 text-primary"></i>
-              <div id="modalBlogViews" class="fw-bold fs-5">1.2K</div>
-              <small class="text-muted">Views</small>
-            </div>
-            <div class="text-center">
-              <i class="bx bx-heart fs-4 text-danger"></i>
-              <div id="modalBlogLikes" class="fw-bold fs-5">340</div>
-              <small class="text-muted">Likes</small>
-            </div>
-            <div class="text-center">
-              <i class="bx bx-time fs-4 text-warning"></i>
-              <div id="modalBlogRead" class="fw-bold fs-5">5m</div>
-              <small class="text-muted">Read Time</small>
-            </div>
+    <!-- Blog Detail Modal -->
+    <div
+      class="modal fade"
+      id="blogDetailModal"
+      tabindex="-1"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content border-0 shadow-lg"
+          style="border-radius: 12px; overflow: hidden"
+        >
+          <div
+            class="modal-header border-0 pb-0"
+            style="position: absolute; right: 0; z-index: 10"
+          >
+            <button
+              type="button"
+              class="btn-close bg-light rounded-circle p-2 m-2 shadow-sm"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
           </div>
+          <div class="modal-body p-5 text-center">
+            <i
+              id="modalBlogIcon"
+              class="bx bx-pen display-1 text-primary mb-3"
+            ></i>
+            <div
+              id="modalBlogTags"
+              class="portfolio-tags justify-content-center mb-3"
+            ></div>
+            <h3 id="modalBlogTitle" class="fw-bold mb-3" style="color: #173b6c">
+              Title
+            </h3>
+            <p id="modalBlogDesc" class="text-muted mb-4">Description</p>
 
-          <div id="modalBlogLinks"></div>
+            <div
+              class="d-flex justify-content-center gap-4 mb-4 pt-3 border-top"
+            >
+              <div class="text-center">
+                <i class="bx bx-show fs-4 text-primary"></i>
+                <div id="modalBlogViews" class="fw-bold fs-5">1.2K</div>
+                <small class="text-muted">Views</small>
+              </div>
+              <div class="text-center">
+                <i class="bx bx-heart fs-4 text-danger"></i>
+                <div id="modalBlogLikes" class="fw-bold fs-5">340</div>
+                <small class="text-muted">Likes</small>
+              </div>
+              <div class="text-center">
+                <i class="bx bx-time fs-4 text-warning"></i>
+                <div id="modalBlogRead" class="fw-bold fs-5">5m</div>
+                <small class="text-muted">Read Time</small>
+              </div>
+            </div>
+
+            <div id="modalBlogLinks"></div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
